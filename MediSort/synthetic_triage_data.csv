@@ -1,0 +1,1000 @@
+Age,Duration,Primary Symptom,Additional Symptoms,Severity,Pain Location,Allergies,Triage Category
+2,4 days,Dizziness,,Moderate,Arms,Peanuts,Urgent
+85,6 days,Frequent urination,"Tinnitus, Loss of balance",Severe,Head,Penicillin,Emergency
+83,6 days,Skin rash,"Fever, Vomiting, Body ache",Moderate,Head,Dust,Urgent
+90,5 days,Blurred vision,"Loss of balance, Sleep disturbances",Mild,Legs,None,Urgent
+68,5 days,Cough,Light sensitivity,Mild,Legs,Dust,Urgent
+37,9 days,Shortness of breath,"Rash, Loss of balance, Diarrhea, Tinnitus",Moderate,Arms,Pollen,Emergency
+61,7 days,Cough,Tinnitus,Mild,Back,Peanuts,Urgent
+57,3 days,Diarrhea,Frequent headaches,Moderate,Upper abdomen,Pollen,Urgent
+34,10 days,Itching,"Nausea, Joint stiffness, Sweating",Moderate,Neck,Penicillin,Urgent
+71,9 days,Skin rash,"Sweating, Cramping, Fever, Chills",Mild,Head,Pollen,Urgent
+62,1 days,Swelling,Dry mouth,Severe,Lower abdomen,Penicillin,Emergency
+29,6 days,Headache,"Loss of balance, Sweating",Mild,Head,None,Urgent
+19,3 days,Frequent urination,"Swelling, Frequent headaches, Depression, Vomiting",Severe,Head,Penicillin,Emergency
+33,7 days,Itching,"Sore throat, Burning sensation, Swelling, Depression",Moderate,Upper abdomen,None,Urgent
+67,9 days,Muscle weakness,,Mild,Arms,Latex,Urgent
+8,4 days,Abdominal pain,"Loss of smell, Chills, Rash, Tremors",Mild,Neck,Latex,Urgent
+49,9 days,Sore throat,Nausea,Severe,Chest,None,Emergency
+72,10 days,Blurred vision,"Light sensitivity, Burning sensation, Loss of balance, Vomiting",Moderate,Back,Pollen,Urgent
+25,8 days,Skin rash,,Mild,Neck,Penicillin,Urgent
+49,8 days,Dizziness,"Depression, Tinnitus",Severe,Lower abdomen,Penicillin,Emergency
+44,3 days,Runny nose,Sweating,Mild,Chest,Peanuts,Home Care
+60,2 days,Runny nose,"Hair loss, Swelling, Diarrhea, Rash",Severe,Lower abdomen,Latex,Emergency
+33,9 days,Sore throat,Anxiety,Mild,Legs,Penicillin,Urgent
+51,5 days,Fatigue,,Mild,Back,Latex,Urgent
+88,8 days,Tingling sensation,"Heartburn, Tinnitus",Mild,Head,Dust,Urgent
+46,4 days,Bruising,"Sweating, Nausea, Tinnitus",Moderate,Lower abdomen,Latex,Urgent
+82,8 days,Blurred vision,,Severe,Head,Penicillin,Emergency
+19,3 days,Back pain,Burning sensation,Moderate,Head,Pollen,Urgent
+79,9 days,Loss of consciousness,"Loss of smell, Anxiety, Tinnitus",Moderate,Neck,Pollen,Emergency
+24,5 days,Palpitations,,Severe,Back,Peanuts,Emergency
+55,5 days,Dizziness,"Light sensitivity, Rash, Fever",Mild,Neck,Penicillin,Urgent
+20,6 days,Constipation,"Loss of smell, Light sensitivity, Cramping, Sleep disturbances",Mild,Lower abdomen,None,Urgent
+75,10 days,Diarrhea,,Severe,Legs,Peanuts,Emergency
+21,5 days,Bruising,,Moderate,Legs,None,Urgent
+32,6 days,Runny nose,"Fever, Cramping, Cough",Severe,Head,Penicillin,Emergency
+19,3 days,Shortness of breath,,Severe,Neck,Pollen,Emergency
+12,7 days,Cough,"Diarrhea, Sneezing",Severe,Lower abdomen,Latex,Emergency
+47,8 days,Bruising,"Body ache, Vomiting, Cough, Tinnitus",Moderate,Legs,Peanuts,Urgent
+81,9 days,Sore throat,"Heartburn, Frequent headaches, Sneezing",Mild,Head,Peanuts,Urgent
+76,5 days,Swelling,"Burning sensation, Swelling, Cramping, Joint stiffness",Mild,Lower abdomen,Pollen,Urgent
+7,10 days,Night sweats,Loss of balance,Mild,Chest,Dust,Urgent
+4,8 days,Cough,,Mild,Head,Penicillin,Urgent
+24,6 days,Diarrhea,,Moderate,Legs,None,Urgent
+20,10 days,Tingling sensation,Light sensitivity,Mild,Chest,Penicillin,Urgent
+48,8 days,Nausea,"Cough, Vomiting, Chills",Mild,Upper abdomen,None,Urgent
+28,10 days,Dizziness,"Sleep disturbances, Fever, Body ache, Depression",Mild,Legs,Pollen,Urgent
+77,8 days,Sore throat,"Anxiety, Heartburn, Hair loss, Diarrhea",Severe,Neck,Peanuts,Emergency
+43,1 days,Vomiting,"Loss of smell, Sore throat, Tremors",Mild,Back,None,Home Care
+89,8 days,Sore throat,"Swelling, Anxiety, Cough",Severe,Legs,Latex,Emergency
+60,8 days,Itching,"Cramping, Body ache, Dry mouth",Moderate,Head,None,Urgent
+33,7 days,Ear pain,"Frequent headaches, Loss of smell, Burning sensation, Cramping",Moderate,Arms,Penicillin,Urgent
+48,9 days,Runny nose,"Sneezing, Tinnitus, Depression",Moderate,Lower abdomen,Penicillin,Urgent
+14,6 days,Tingling sensation,"Swelling, Vomiting, Anxiety",Severe,Neck,None,Emergency
+24,1 days,Itching,,Mild,Back,Penicillin,Home Care
+36,4 days,Palpitations,Cramping,Severe,Legs,Penicillin,Emergency
+61,10 days,Back pain,"Swelling, Dry mouth",Severe,Back,Pollen,Emergency
+64,1 days,Abdominal pain,Loss of balance,Moderate,Legs,Peanuts,Urgent
+19,8 days,Shortness of breath,"Swelling, Sore throat",Moderate,Arms,Penicillin,Emergency
+14,2 days,Abdominal pain,Frequent headaches,Severe,Neck,Latex,Emergency
+75,3 days,Night sweats,"Hair loss, Sore throat",Mild,Back,Dust,Home Care
+89,5 days,Loss of consciousness,Loss of smell,Severe,Upper abdomen,Peanuts,Emergency
+5,9 days,Constipation,Cough,Mild,Upper abdomen,Pollen,Urgent
+7,9 days,Weight loss,"Hair loss, Heartburn, Depression, Chills",Moderate,Upper abdomen,None,Urgent
+23,5 days,Palpitations,"Swelling, Anxiety",Severe,Legs,Pollen,Emergency
+20,7 days,Burning while urinating,"Sweating, Fever, Loss of smell",Mild,Chest,None,Urgent
+18,8 days,Sore throat,"Chills, Fever",Moderate,Head,Penicillin,Urgent
+60,8 days,Constipation,"Sleep disturbances, Cramping",Moderate,Legs,Latex,Urgent
+3,5 days,Tingling sensation,"Anxiety, Sneezing, Depression",Moderate,Legs,Peanuts,Urgent
+30,7 days,Mood swings,"Fever, Burning sensation, Sleep disturbances, Dry mouth",Severe,Legs,None,Emergency
+59,4 days,Burning while urinating,"Fever, Vomiting, Dry mouth, Chills",Severe,Back,Pollen,Emergency
+3,4 days,Ear pain,Tinnitus,Moderate,Upper abdomen,Pollen,Urgent
+66,4 days,Cough,Joint stiffness,Severe,Head,Pollen,Emergency
+62,10 days,Cold extremities,"Loss of smell, Tremors",Mild,Upper abdomen,Pollen,Urgent
+32,7 days,Skin rash,"Sleep disturbances, Tremors, Sore throat",Mild,Arms,None,Urgent
+4,4 days,Chest pain,Cramping,Moderate,Neck,Penicillin,Emergency
+66,7 days,Muscle weakness,,Mild,Arms,None,Urgent
+53,2 days,Cough,"Diarrhea, Cramping, Tinnitus",Severe,Arms,Pollen,Emergency
+54,8 days,Frequent urination,"Frequent headaches, Diarrhea, Loss of smell",Moderate,Lower abdomen,Dust,Urgent
+76,6 days,Burning while urinating,"Sleep disturbances, Chills, Frequent headaches",Severe,Neck,Dust,Emergency
+55,9 days,Fatigue,"Frequent headaches, Hair loss, Light sensitivity, Loss of smell",Mild,Chest,Peanuts,Urgent
+63,1 days,Cold extremities,"Fever, Sweating, Loss of smell, Burning sensation",Mild,Upper abdomen,Penicillin,Home Care
+14,5 days,Bruising,"Swelling, Rash",Severe,Legs,Peanuts,Emergency
+13,1 days,Fever,"Cough, Joint stiffness, Sore throat",Moderate,Back,Peanuts,Urgent
+2,7 days,Swelling,"Depression, Hair loss, Body ache, Light sensitivity",Mild,Upper abdomen,Dust,Urgent
+54,1 days,Night sweats,,Mild,Back,None,Home Care
+56,8 days,Frequent urination,"Diarrhea, Sneezing",Severe,Lower abdomen,Penicillin,Emergency
+43,8 days,Itching,"Sweating, Frequent headaches",Moderate,Head,Dust,Urgent
+82,6 days,Loss of consciousness,Sleep disturbances,Mild,Head,None,Emergency
+81,8 days,Joint pain,"Joint stiffness, Frequent headaches",Moderate,Head,Pollen,Urgent
+73,9 days,Palpitations,,Severe,Neck,Latex,Emergency
+42,2 days,Swelling,"Loss of smell, Tremors",Mild,Chest,Pollen,Home Care
+49,6 days,Frequent urination,"Nausea, Cramping, Sweating",Severe,Head,Penicillin,Emergency
+25,5 days,Itching,Sneezing,Mild,Lower abdomen,Latex,Urgent
+58,2 days,Ear pain,Body ache,Severe,Neck,Peanuts,Emergency
+7,7 days,Night sweats,"Frequent headaches, Burning sensation, Sneezing",Severe,Back,Dust,Emergency
+74,10 days,Blurred vision,Swelling,Moderate,Arms,Peanuts,Urgent
+55,10 days,Fever,,Moderate,Neck,Latex,Urgent
+24,4 days,Cold extremities,"Heartburn, Loss of smell, Sore throat",Moderate,Legs,None,Urgent
+9,3 days,Palpitations,Tinnitus,Moderate,Upper abdomen,Latex,Urgent
+24,3 days,Frequent urination,"Rash, Loss of smell, Vomiting",Mild,Back,Penicillin,Home Care
+63,9 days,Skin rash,"Nausea, Sleep disturbances",Mild,Back,Latex,Urgent
+85,3 days,Frequent urination,"Hair loss, Diarrhea, Burning sensation",Moderate,Legs,Dust,Urgent
+32,4 days,Mood swings,"Sneezing, Heartburn",Mild,Arms,Dust,Urgent
+84,7 days,Cough,Vomiting,Mild,Head,Latex,Urgent
+7,2 days,Vomiting,,Moderate,Back,Penicillin,Urgent
+51,10 days,Mood swings,"Joint stiffness, Cough, Vomiting, Cramping",Severe,Back,Peanuts,Emergency
+51,8 days,Skin rash,Nausea,Severe,Head,None,Emergency
+61,10 days,Tingling sensation,Nausea,Mild,Lower abdomen,Penicillin,Urgent
+63,2 days,Vomiting,"Tinnitus, Sneezing, Sore throat",Mild,Chest,Peanuts,Home Care
+88,5 days,Abdominal pain,"Sleep disturbances, Diarrhea",Severe,Arms,Peanuts,Emergency
+69,6 days,Tingling sensation,"Frequent headaches, Swelling, Cough, Tremors",Mild,Back,Dust,Urgent
+89,9 days,Fever,"Swelling, Depression, Sneezing, Sweating",Severe,Chest,None,Emergency
+29,9 days,Muscle weakness,"Diarrhea, Light sensitivity, Heartburn",Mild,Chest,Dust,Urgent
+1,9 days,Itching,"Heartburn, Rash, Hair loss, Chills",Severe,Chest,Penicillin,Emergency
+45,7 days,Skin rash,"Depression, Dry mouth",Moderate,Neck,Latex,Urgent
+23,8 days,Abdominal pain,"Loss of smell, Nausea",Mild,Upper abdomen,Dust,Urgent
+81,10 days,Cold extremities,"Sweating, Cough, Joint stiffness, Sore throat",Mild,Upper abdomen,None,Urgent
+2,1 days,Itching,,Severe,Chest,Pollen,Emergency
+41,8 days,Nausea,"Hair loss, Tremors, Nausea",Mild,Arms,Penicillin,Urgent
+21,2 days,Vomiting,"Rash, Chills, Heartburn",Mild,Upper abdomen,Pollen,Home Care
+72,10 days,Shortness of breath,,Mild,Neck,Latex,Emergency
+41,2 days,Itching,"Light sensitivity, Chills, Dry mouth",Severe,Upper abdomen,Peanuts,Emergency
+55,2 days,Cough,"Nausea, Loss of smell, Tremors",Mild,Neck,None,Home Care
+17,6 days,Abdominal pain,"Sleep disturbances, Sore throat, Cough, Fever",Severe,Head,Pollen,Emergency
+3,4 days,Loss of consciousness,"Body ache, Frequent headaches, Burning sensation, Anxiety",Moderate,Legs,Pollen,Emergency
+39,10 days,Frequent urination,"Depression, Frequent headaches",Moderate,Upper abdomen,Latex,Urgent
+40,8 days,Swelling,"Body ache, Loss of balance",Moderate,Lower abdomen,Dust,Urgent
+18,4 days,Ear pain,,Moderate,Neck,Latex,Urgent
+24,4 days,Joint pain,"Sore throat, Depression",Mild,Arms,Latex,Urgent
+19,2 days,Runny nose,"Sweating, Hair loss",Mild,Legs,Latex,Home Care
+62,5 days,Night sweats,"Frequent headaches, Depression, Cramping",Mild,Neck,Pollen,Urgent
+55,1 days,Runny nose,"Vomiting, Depression, Diarrhea",Mild,Back,Penicillin,Home Care
+62,1 days,Swelling,"Loss of smell, Chills",Moderate,Back,Latex,Urgent
+58,7 days,Loss of consciousness,"Anxiety, Joint stiffness, Chills, Cramping",Severe,Chest,None,Emergency
+32,2 days,Abdominal pain,Sweating,Mild,Arms,Pollen,Home Care
+61,6 days,Chest pain,Fever,Moderate,Legs,Penicillin,Emergency
+68,10 days,Dizziness,"Sore throat, Swelling, Loss of balance, Light sensitivity",Mild,Head,Latex,Urgent
+41,10 days,Ear pain,"Frequent headaches, Tinnitus, Joint stiffness",Moderate,Legs,Latex,Urgent
+85,3 days,Nausea,"Tremors, Chills, Dry mouth",Moderate,Upper abdomen,Peanuts,Urgent
+90,2 days,Itching,"Vomiting, Cramping, Joint stiffness",Mild,Upper abdomen,Dust,Home Care
+10,1 days,Muscle weakness,"Sneezing, Loss of balance, Vomiting",Severe,Head,Dust,Emergency
+42,8 days,Cough,"Depression, Rash, Loss of balance",Moderate,Neck,None,Urgent
+57,10 days,Blurred vision,Sleep disturbances,Moderate,Back,Penicillin,Urgent
+40,8 days,Burning while urinating,Sneezing,Moderate,Arms,Pollen,Urgent
+18,7 days,Palpitations,"Sneezing, Light sensitivity, Joint stiffness",Mild,Upper abdomen,None,Urgent
+78,1 days,Frequent urination,Swelling,Moderate,Chest,None,Urgent
+30,8 days,Sore throat,Burning sensation,Mild,Neck,Latex,Urgent
+15,3 days,Weight loss,"Body ache, Hair loss",Severe,Arms,Penicillin,Emergency
+34,7 days,Chest pain,,Severe,Head,Peanuts,Emergency
+86,1 days,Swelling,"Dry mouth, Burning sensation, Vomiting, Nausea",Mild,Arms,Dust,Home Care
+35,3 days,Constipation,"Vomiting, Loss of smell, Sleep disturbances",Severe,Upper abdomen,Pollen,Emergency
+5,7 days,Abdominal pain,Frequent headaches,Mild,Head,Penicillin,Urgent
+68,9 days,Frequent urination,"Dry mouth, Vomiting, Sweating",Mild,Arms,Peanuts,Urgent
+1,3 days,Skin rash,"Depression, Cough",Mild,Neck,Latex,Home Care
+14,7 days,Back pain,,Severe,Legs,Peanuts,Emergency
+81,10 days,Ear pain,Tremors,Mild,Neck,Penicillin,Urgent
+89,6 days,Diarrhea,Loss of balance,Mild,Lower abdomen,Latex,Urgent
+16,4 days,Vomiting,"Sore throat, Frequent headaches, Anxiety",Mild,Lower abdomen,Penicillin,Urgent
+19,2 days,Fatigue,Diarrhea,Mild,Lower abdomen,Pollen,Home Care
+54,5 days,Blurred vision,"Tremors, Nausea",Severe,Back,Pollen,Emergency
+72,6 days,Back pain,Sweating,Mild,Lower abdomen,Peanuts,Urgent
+73,7 days,Frequent urination,,Severe,Head,Pollen,Emergency
+56,2 days,Palpitations,"Loss of balance, Sweating, Anxiety",Mild,Legs,Pollen,Home Care
+43,2 days,Muscle weakness,,Severe,Head,Peanuts,Emergency
+34,3 days,Mood swings,"Rash, Dry mouth, Anxiety, Joint stiffness",Severe,Upper abdomen,Pollen,Emergency
+85,1 days,Cough,,Severe,Legs,Latex,Emergency
+40,3 days,Bruising,"Heartburn, Hair loss",Mild,Back,None,Home Care
+69,2 days,Burning while urinating,"Depression, Frequent headaches, Fever, Sneezing",Severe,Upper abdomen,Pollen,Emergency
+18,3 days,Cough,"Body ache, Sleep disturbances, Sweating, Depression",Mild,Lower abdomen,None,Home Care
+5,5 days,Loss of consciousness,"Sleep disturbances, Chills",Mild,Lower abdomen,Peanuts,Emergency
+15,3 days,Fatigue,,Mild,Head,Dust,Home Care
+47,4 days,Palpitations,"Depression, Loss of smell",Severe,Neck,Dust,Emergency
+1,1 days,Swelling,"Joint stiffness, Light sensitivity",Mild,Chest,Latex,Home Care
+44,7 days,Ear pain,"Vomiting, Chills, Hair loss",Severe,Upper abdomen,None,Emergency
+8,4 days,Joint pain,"Loss of smell, Dry mouth",Mild,Neck,Pollen,Urgent
+16,4 days,Tingling sensation,,Severe,Neck,Pollen,Emergency
+1,3 days,Diarrhea,Body ache,Severe,Chest,Dust,Emergency
+69,8 days,Skin rash,"Cough, Body ache, Rash, Frequent headaches",Mild,Chest,Latex,Urgent
+34,4 days,Frequent urination,"Hair loss, Cramping, Dry mouth, Sleep disturbances",Severe,Upper abdomen,Pollen,Emergency
+89,4 days,Nausea,"Rash, Dry mouth, Burning sensation",Severe,Lower abdomen,Pollen,Emergency
+70,8 days,Joint pain,Rash,Severe,Lower abdomen,None,Emergency
+42,7 days,Weight loss,Burning sensation,Severe,Upper abdomen,Dust,Emergency
+89,4 days,Swelling,"Rash, Depression",Severe,Head,None,Emergency
+44,8 days,Palpitations,"Burning sensation, Cramping, Depression, Hair loss",Severe,Neck,Penicillin,Emergency
+66,9 days,Muscle weakness,,Mild,Arms,Peanuts,Urgent
+69,4 days,Nausea,"Anxiety, Sore throat",Severe,Chest,Penicillin,Emergency
+75,6 days,Joint pain,"Rash, Burning sensation, Depression, Cough",Severe,Arms,Dust,Emergency
+33,2 days,Cough,"Sleep disturbances, Burning sensation, Loss of smell",Mild,Head,Penicillin,Home Care
+70,3 days,Frequent urination,,Severe,Neck,Latex,Emergency
+40,2 days,Sore throat,,Mild,Legs,Dust,Home Care
+6,6 days,Vomiting,Heartburn,Moderate,Neck,Latex,Urgent
+74,2 days,Night sweats,,Moderate,Head,Dust,Urgent
+55,2 days,Fever,,Moderate,Upper abdomen,Pollen,Urgent
+40,7 days,Tingling sensation,"Nausea, Tinnitus, Loss of smell",Severe,Head,Dust,Emergency
+6,5 days,Night sweats,"Diarrhea, Burning sensation",Moderate,Head,Dust,Urgent
+79,7 days,Swelling,,Mild,Arms,Pollen,Urgent
+51,9 days,Diarrhea,"Vomiting, Loss of smell",Severe,Arms,Dust,Emergency
+1,5 days,Diarrhea,Frequent headaches,Severe,Upper abdomen,Latex,Emergency
+37,8 days,Blurred vision,"Light sensitivity, Fever",Severe,Lower abdomen,Peanuts,Emergency
+40,1 days,Shortness of breath,"Sleep disturbances, Vomiting",Mild,Lower abdomen,Pollen,Emergency
+45,1 days,Joint pain,,Mild,Upper abdomen,Peanuts,Home Care
+83,3 days,Night sweats,"Diarrhea, Sleep disturbances",Moderate,Upper abdomen,Dust,Urgent
+52,3 days,Palpitations,,Moderate,Lower abdomen,Penicillin,Urgent
+7,3 days,Chest pain,,Mild,Back,None,Emergency
+42,4 days,Shortness of breath,Fever,Mild,Head,Penicillin,Emergency
+52,6 days,Ear pain,"Vomiting, Fever",Severe,Neck,Pollen,Emergency
+65,4 days,Loss of consciousness,,Moderate,Upper abdomen,Penicillin,Emergency
+28,10 days,Shortness of breath,Chills,Mild,Arms,Latex,Emergency
+86,10 days,Swelling,"Tinnitus, Fever",Severe,Lower abdomen,Penicillin,Emergency
+40,3 days,Headache,"Hair loss, Sneezing, Dry mouth, Heartburn",Severe,Upper abdomen,None,Emergency
+24,9 days,Night sweats,Tremors,Moderate,Neck,Penicillin,Urgent
+86,10 days,Dizziness,,Mild,Arms,Penicillin,Urgent
+46,2 days,Cold extremities,"Loss of balance, Heartburn, Cough, Cramping",Moderate,Neck,None,Urgent
+23,7 days,Headache,"Depression, Frequent headaches",Severe,Head,None,Emergency
+30,5 days,Shortness of breath,"Sneezing, Joint stiffness, Burning sensation, Tinnitus",Moderate,Head,Peanuts,Emergency
+77,5 days,Back pain,"Swelling, Chills",Severe,Neck,Pollen,Emergency
+4,4 days,Headache,Joint stiffness,Severe,Legs,None,Emergency
+15,5 days,Constipation,"Cramping, Cough",Moderate,Upper abdomen,Pollen,Urgent
+60,8 days,Night sweats,,Moderate,Neck,Dust,Urgent
+56,1 days,Blurred vision,,Severe,Legs,Penicillin,Emergency
+22,6 days,Cough,"Sneezing, Sore throat, Swelling",Mild,Head,Peanuts,Urgent
+62,5 days,Ear pain,"Depression, Heartburn, Light sensitivity, Loss of balance",Mild,Head,None,Urgent
+1,10 days,Abdominal pain,"Light sensitivity, Sneezing, Joint stiffness, Rash",Mild,Arms,None,Urgent
+24,10 days,Vomiting,"Frequent headaches, Tinnitus, Dry mouth",Severe,Legs,Penicillin,Emergency
+65,4 days,Joint pain,"Heartburn, Hair loss, Burning sensation",Severe,Neck,Penicillin,Emergency
+24,8 days,Abdominal pain,"Depression, Anxiety, Body ache, Cramping",Severe,Neck,Peanuts,Emergency
+56,1 days,Cold extremities,"Nausea, Sweating",Severe,Legs,Penicillin,Emergency
+23,8 days,Palpitations,"Joint stiffness, Tremors, Burning sensation",Moderate,Chest,None,Urgent
+37,5 days,Runny nose,,Mild,Head,None,Urgent
+62,10 days,Tingling sensation,,Severe,Legs,Penicillin,Emergency
+30,10 days,Abdominal pain,"Sore throat, Nausea, Rash, Loss of balance",Moderate,Neck,Dust,Urgent
+37,2 days,Loss of consciousness,"Joint stiffness, Fever",Moderate,Back,Pollen,Emergency
+10,3 days,Bruising,Sore throat,Severe,Lower abdomen,Dust,Emergency
+80,1 days,Cold extremities,"Heartburn, Tremors, Sneezing, Hair loss",Moderate,Chest,Latex,Urgent
+45,3 days,Skin rash,,Severe,Arms,Pollen,Emergency
+9,6 days,Muscle weakness,Depression,Moderate,Arms,Penicillin,Urgent
+78,8 days,Abdominal pain,,Moderate,Lower abdomen,Peanuts,Urgent
+25,9 days,Dizziness,"Tremors, Nausea",Moderate,Lower abdomen,Peanuts,Urgent
+43,6 days,Headache,"Vomiting, Loss of balance, Sweating",Moderate,Upper abdomen,Penicillin,Urgent
+55,6 days,Loss of consciousness,"Vomiting, Dry mouth, Sleep disturbances, Loss of balance",Moderate,Head,None,Emergency
+49,7 days,Loss of consciousness,"Diarrhea, Sweating",Moderate,Neck,Pollen,Emergency
+36,8 days,Nausea,,Mild,Back,Peanuts,Urgent
+80,7 days,Ear pain,Nausea,Mild,Back,Latex,Urgent
+27,10 days,Skin rash,Joint stiffness,Moderate,Neck,Penicillin,Urgent
+36,3 days,Sore throat,"Sneezing, Vomiting",Mild,Head,None,Home Care
+86,8 days,Back pain,"Body ache, Nausea, Diarrhea",Moderate,Legs,Peanuts,Urgent
+51,2 days,Ear pain,Chills,Severe,Back,Pollen,Emergency
+68,4 days,Ear pain,"Nausea, Swelling",Severe,Arms,Latex,Emergency
+10,1 days,Fever,"Depression, Swelling, Tremors, Hair loss",Moderate,Back,Latex,Urgent
+15,9 days,Joint pain,"Sneezing, Anxiety, Chills",Severe,Arms,Latex,Emergency
+5,10 days,Skin rash,,Moderate,Lower abdomen,Penicillin,Urgent
+48,4 days,Chest pain,,Severe,Neck,Peanuts,Emergency
+77,9 days,Burning while urinating,Frequent headaches,Moderate,Arms,Latex,Urgent
+41,2 days,Headache,"Heartburn, Rash, Tinnitus, Joint stiffness",Severe,Back,Peanuts,Emergency
+70,2 days,Diarrhea,"Sweating, Rash, Body ache, Sleep disturbances",Moderate,Head,Peanuts,Urgent
+44,5 days,Cough,"Sleep disturbances, Loss of smell, Depression, Sweating",Mild,Upper abdomen,Latex,Urgent
+63,4 days,Cold extremities,"Anxiety, Frequent headaches, Sleep disturbances, Vomiting",Moderate,Chest,Dust,Urgent
+28,2 days,Night sweats,Loss of smell,Mild,Chest,Peanuts,Home Care
+40,6 days,Headache,"Loss of smell, Sweating, Joint stiffness, Body ache",Mild,Upper abdomen,Penicillin,Urgent
+1,10 days,Ear pain,Body ache,Moderate,Legs,None,Urgent
+16,9 days,Palpitations,,Moderate,Chest,Latex,Urgent
+15,2 days,Fever,,Mild,Legs,Peanuts,Home Care
+77,1 days,Sore throat,"Sweating, Hair loss",Moderate,Lower abdomen,None,Urgent
+12,10 days,Mood swings,"Tremors, Tinnitus, Body ache, Diarrhea",Severe,Back,Peanuts,Emergency
+86,4 days,Chest pain,"Cramping, Sleep disturbances, Depression",Severe,Upper abdomen,None,Emergency
+54,10 days,Diarrhea,Rash,Severe,Neck,Dust,Emergency
+6,6 days,Sore throat,"Loss of balance, Light sensitivity, Burning sensation",Severe,Lower abdomen,Dust,Emergency
+4,5 days,Fatigue,"Sore throat, Loss of smell, Heartburn, Chills",Mild,Chest,Penicillin,Urgent
+58,6 days,Dizziness,"Cramping, Light sensitivity, Sore throat, Dry mouth",Moderate,Legs,Penicillin,Urgent
+61,1 days,Constipation,"Cough, Dry mouth",Mild,Chest,Dust,Home Care
+5,2 days,Fatigue,"Heartburn, Loss of balance",Moderate,Head,Pollen,Urgent
+55,3 days,Skin rash,,Severe,Upper abdomen,Dust,Emergency
+56,6 days,Bruising,Diarrhea,Mild,Legs,Dust,Urgent
+22,6 days,Cough,Tinnitus,Moderate,Neck,Dust,Urgent
+21,4 days,Blurred vision,Vomiting,Severe,Lower abdomen,None,Emergency
+36,1 days,Palpitations,,Severe,Upper abdomen,Dust,Emergency
+66,7 days,Back pain,"Chills, Sweating",Mild,Upper abdomen,None,Urgent
+20,7 days,Back pain,"Sleep disturbances, Depression, Nausea, Fever",Mild,Lower abdomen,Penicillin,Urgent
+65,9 days,Bruising,"Vomiting, Nausea, Joint stiffness",Moderate,Neck,None,Urgent
+9,3 days,Shortness of breath,,Mild,Head,Latex,Emergency
+70,1 days,Itching,"Body ache, Fever, Heartburn, Sneezing",Mild,Upper abdomen,Penicillin,Home Care
+72,7 days,Weight loss,"Sore throat, Sneezing, Tinnitus",Moderate,Back,Latex,Urgent
+35,6 days,Vomiting,Sore throat,Mild,Upper abdomen,Peanuts,Urgent
+77,4 days,Headache,"Dry mouth, Burning sensation",Mild,Arms,Peanuts,Urgent
+79,4 days,Ear pain,"Fever, Nausea, Chills",Moderate,Back,Latex,Urgent
+70,10 days,Weight loss,"Fever, Sore throat",Severe,Arms,Latex,Emergency
+57,3 days,Cough,"Dry mouth, Tremors",Moderate,Legs,Penicillin,Urgent
+37,2 days,Constipation,"Loss of balance, Rash, Tinnitus",Severe,Head,Penicillin,Emergency
+45,4 days,Swelling,"Chills, Depression",Mild,Lower abdomen,None,Urgent
+13,6 days,Mood swings,"Swelling, Sweating",Mild,Arms,Peanuts,Urgent
+45,10 days,Fatigue,"Burning sensation, Sleep disturbances, Loss of balance, Diarrhea",Moderate,Chest,None,Urgent
+83,10 days,Abdominal pain,"Tinnitus, Hair loss, Cramping",Moderate,Lower abdomen,None,Urgent
+77,6 days,Joint pain,Nausea,Mild,Upper abdomen,None,Urgent
+49,9 days,Weight loss,,Severe,Head,Penicillin,Emergency
+28,4 days,Vomiting,"Loss of balance, Vomiting, Heartburn, Anxiety",Moderate,Lower abdomen,None,Urgent
+55,9 days,Night sweats,"Sneezing, Hair loss, Cramping, Diarrhea",Mild,Arms,Peanuts,Urgent
+21,7 days,Dizziness,"Tremors, Diarrhea, Loss of smell",Severe,Chest,Penicillin,Emergency
+3,2 days,Itching,"Sore throat, Cramping",Moderate,Arms,Pollen,Urgent
+71,3 days,Skin rash,"Sneezing, Cough",Mild,Upper abdomen,Penicillin,Home Care
+48,2 days,Headache,Sleep disturbances,Mild,Back,None,Home Care
+67,6 days,Constipation,"Frequent headaches, Burning sensation, Nausea, Tremors",Moderate,Arms,None,Urgent
+72,9 days,Mood swings,Rash,Severe,Back,Dust,Emergency
+39,10 days,Bruising,Frequent headaches,Severe,Arms,Penicillin,Emergency
+21,4 days,Headache,Rash,Moderate,Neck,Dust,Urgent
+2,5 days,Weight loss,,Moderate,Back,Penicillin,Urgent
+3,2 days,Tingling sensation,"Cough, Diarrhea, Anxiety, Swelling",Mild,Lower abdomen,Peanuts,Home Care
+44,8 days,Muscle weakness,"Tinnitus, Depression, Joint stiffness",Mild,Head,Peanuts,Urgent
+16,4 days,Dizziness,"Joint stiffness, Loss of balance",Severe,Legs,Penicillin,Emergency
+55,2 days,Cold extremities,"Cough, Nausea, Tinnitus",Severe,Upper abdomen,Pollen,Emergency
+56,4 days,Back pain,,Moderate,Legs,Latex,Urgent
+18,4 days,Back pain,"Chills, Rash",Severe,Neck,None,Emergency
+29,4 days,Palpitations,"Sore throat, Joint stiffness, Vomiting",Moderate,Head,Latex,Urgent
+20,10 days,Skin rash,,Moderate,Legs,Penicillin,Urgent
+31,3 days,Shortness of breath,"Sweating, Tinnitus, Cramping",Severe,Head,Latex,Emergency
+15,4 days,Cold extremities,"Body ache, Chills, Nausea",Moderate,Lower abdomen,Latex,Urgent
+90,10 days,Nausea,Tremors,Moderate,Arms,Dust,Urgent
+37,10 days,Vomiting,"Burning sensation, Dry mouth",Moderate,Back,Latex,Urgent
+17,1 days,Headache,,Mild,Lower abdomen,Penicillin,Home Care
+56,4 days,Shortness of breath,,Mild,Neck,Pollen,Emergency
+50,5 days,Frequent urination,"Sweating, Diarrhea",Severe,Upper abdomen,Pollen,Emergency
+57,7 days,Muscle weakness,Dry mouth,Mild,Upper abdomen,None,Urgent
+84,10 days,Burning while urinating,"Loss of smell, Sleep disturbances, Joint stiffness, Cough",Mild,Back,Penicillin,Urgent
+17,7 days,Abdominal pain,"Cramping, Sweating, Diarrhea, Depression",Severe,Arms,Latex,Emergency
+89,7 days,Abdominal pain,"Loss of smell, Tremors",Mild,Legs,Pollen,Urgent
+57,3 days,Back pain,"Nausea, Hair loss, Vomiting, Swelling",Mild,Chest,Peanuts,Home Care
+6,4 days,Frequent urination,Frequent headaches,Severe,Upper abdomen,Penicillin,Emergency
+63,8 days,Ear pain,Depression,Mild,Back,Pollen,Urgent
+47,5 days,Ear pain,,Mild,Back,Peanuts,Urgent
+62,9 days,Loss of consciousness,Joint stiffness,Severe,Head,Pollen,Emergency
+8,4 days,Abdominal pain,"Joint stiffness, Frequent headaches",Severe,Upper abdomen,Pollen,Emergency
+68,2 days,Sore throat,"Sweating, Anxiety, Vomiting",Moderate,Back,Penicillin,Urgent
+41,8 days,Tingling sensation,,Severe,Chest,Dust,Emergency
+69,2 days,Weight loss,Swelling,Severe,Arms,Peanuts,Emergency
+25,8 days,Ear pain,"Tinnitus, Cough, Loss of smell, Fever",Moderate,Chest,Penicillin,Urgent
+70,6 days,Joint pain,,Mild,Back,Peanuts,Urgent
+66,10 days,Muscle weakness,,Moderate,Head,Pollen,Urgent
+90,7 days,Shortness of breath,"Tremors, Swelling",Severe,Legs,Pollen,Emergency
+83,6 days,Dizziness,Fever,Mild,Chest,Pollen,Urgent
+49,7 days,Joint pain,"Cough, Cramping, Swelling",Severe,Legs,Latex,Emergency
+15,5 days,Cough,"Swelling, Cough",Moderate,Back,None,Urgent
+44,5 days,Cough,"Chills, Sore throat, Fever, Cough",Mild,Arms,Dust,Urgent
+71,10 days,Cold extremities,"Cramping, Rash, Nausea, Tremors",Severe,Legs,Pollen,Emergency
+2,7 days,Frequent urination,Diarrhea,Mild,Arms,Dust,Urgent
+30,5 days,Fever,,Mild,Chest,Pollen,Urgent
+3,10 days,Constipation,"Cramping, Light sensitivity, Anxiety",Moderate,Chest,Peanuts,Urgent
+57,3 days,Burning while urinating,"Vomiting, Sneezing, Cramping",Severe,Upper abdomen,Peanuts,Emergency
+78,9 days,Mood swings,"Hair loss, Light sensitivity",Moderate,Head,Penicillin,Urgent
+10,8 days,Palpitations,Sleep disturbances,Severe,Arms,Peanuts,Emergency
+2,5 days,Blurred vision,"Fever, Hair loss, Diarrhea",Severe,Arms,Peanuts,Emergency
+43,7 days,Joint pain,,Severe,Neck,Peanuts,Emergency
+72,4 days,Abdominal pain,"Sneezing, Anxiety, Vomiting, Fever",Severe,Legs,Dust,Emergency
+16,7 days,Runny nose,"Sore throat, Cough, Joint stiffness",Moderate,Chest,Pollen,Urgent
+13,9 days,Diarrhea,"Loss of balance, Joint stiffness",Mild,Head,Latex,Urgent
+8,1 days,Ear pain,Joint stiffness,Moderate,Upper abdomen,Penicillin,Urgent
+72,9 days,Sore throat,"Swelling, Dry mouth, Nausea, Chills",Moderate,Upper abdomen,Penicillin,Urgent
+26,1 days,Palpitations,,Mild,Legs,Pollen,Home Care
+6,10 days,Burning while urinating,,Mild,Upper abdomen,Pollen,Urgent
+38,6 days,Blurred vision,"Diarrhea, Light sensitivity, Depression",Mild,Upper abdomen,Dust,Urgent
+53,9 days,Nausea,Dry mouth,Mild,Legs,None,Urgent
+81,8 days,Frequent urination,,Severe,Upper abdomen,Pollen,Emergency
+36,4 days,Palpitations,"Loss of smell, Sneezing, Swelling, Sore throat",Moderate,Arms,Penicillin,Urgent
+21,1 days,Weight loss,,Moderate,Chest,Penicillin,Urgent
+5,7 days,Abdominal pain,"Loss of smell, Body ache, Chills, Sore throat",Moderate,Legs,Penicillin,Urgent
+58,3 days,Night sweats,,Mild,Lower abdomen,None,Home Care
+89,4 days,Palpitations,Sore throat,Moderate,Neck,Dust,Urgent
+16,2 days,Abdominal pain,,Moderate,Upper abdomen,Pollen,Urgent
+40,4 days,Runny nose,"Anxiety, Loss of balance",Severe,Upper abdomen,Pollen,Emergency
+46,7 days,Nausea,"Loss of smell, Sore throat, Depression, Hair loss",Moderate,Arms,Dust,Urgent
+41,8 days,Skin rash,"Diarrhea, Loss of balance, Hair loss",Moderate,Arms,None,Urgent
+34,1 days,Cough,"Tremors, Frequent headaches, Sweating, Chills",Moderate,Neck,Peanuts,Urgent
+61,1 days,Frequent urination,Depression,Mild,Neck,Pollen,Home Care
+3,9 days,Fatigue,"Frequent headaches, Anxiety, Heartburn, Light sensitivity",Mild,Head,Latex,Urgent
+50,9 days,Chest pain,"Cramping, Tinnitus, Frequent headaches",Severe,Legs,Dust,Emergency
+38,5 days,Mood swings,"Frequent headaches, Light sensitivity, Dry mouth",Severe,Legs,Peanuts,Emergency
+88,7 days,Dizziness,Frequent headaches,Severe,Lower abdomen,None,Emergency
+48,9 days,Swelling,"Vomiting, Tremors",Moderate,Back,Dust,Urgent
+78,5 days,Weight loss,"Rash, Heartburn, Cough",Moderate,Legs,None,Urgent
+80,1 days,Dizziness,"Joint stiffness, Loss of smell, Tinnitus, Loss of balance",Mild,Lower abdomen,Peanuts,Home Care
+52,8 days,Vomiting,"Tremors, Rash",Moderate,Legs,Dust,Urgent
+77,4 days,Cough,"Chills, Hair loss, Anxiety",Moderate,Arms,None,Urgent
+37,4 days,Swelling,"Fever, Light sensitivity, Heartburn",Mild,Arms,None,Urgent
+73,7 days,Tingling sensation,,Mild,Lower abdomen,Latex,Urgent
+33,9 days,Abdominal pain,Tremors,Mild,Head,Peanuts,Urgent
+43,8 days,Fatigue,"Hair loss, Burning sensation",Moderate,Chest,None,Urgent
+15,5 days,Cough,"Vomiting, Hair loss",Severe,Legs,Penicillin,Emergency
+70,10 days,Itching,"Tremors, Hair loss, Joint stiffness",Severe,Back,None,Emergency
+8,3 days,Headache,Nausea,Severe,Arms,None,Emergency
+55,6 days,Fatigue,"Frequent headaches, Heartburn, Sore throat, Cramping",Severe,Upper abdomen,Peanuts,Emergency
+64,3 days,Nausea,,Severe,Neck,Penicillin,Emergency
+25,2 days,Bruising,,Moderate,Lower abdomen,Dust,Urgent
+3,1 days,Ear pain,"Cough, Tremors, Swelling",Mild,Neck,Penicillin,Home Care
+27,3 days,Frequent urination,"Depression, Sleep disturbances",Severe,Legs,Latex,Emergency
+83,7 days,Loss of consciousness,,Severe,Neck,Dust,Emergency
+19,8 days,Night sweats,"Light sensitivity, Loss of balance",Mild,Legs,Penicillin,Urgent
+54,10 days,Constipation,"Tremors, Rash",Mild,Arms,Pollen,Urgent
+67,6 days,Back pain,"Heartburn, Hair loss",Mild,Neck,Penicillin,Urgent
+69,8 days,Dizziness,Fever,Severe,Legs,Latex,Emergency
+13,1 days,Sore throat,,Moderate,Chest,None,Urgent
+64,3 days,Weight loss,"Sore throat, Cough, Sneezing",Mild,Lower abdomen,Latex,Home Care
+3,1 days,Night sweats,"Fever, Joint stiffness, Sneezing, Frequent headaches",Severe,Neck,Peanuts,Emergency
+63,4 days,Night sweats,"Body ache, Joint stiffness, Cramping",Severe,Legs,Pollen,Emergency
+48,7 days,Vomiting,"Loss of smell, Cramping, Chills, Heartburn",Severe,Chest,None,Emergency
+70,5 days,Weight loss,"Loss of smell, Depression, Joint stiffness, Light sensitivity",Moderate,Back,Penicillin,Urgent
+85,4 days,Runny nose,"Swelling, Joint stiffness, Anxiety, Burning sensation",Severe,Arms,None,Emergency
+11,6 days,Dizziness,"Loss of smell, Tremors",Severe,Neck,Penicillin,Emergency
+13,2 days,Chest pain,"Nausea, Sweating, Heartburn",Mild,Chest,None,Emergency
+35,8 days,Weight loss,"Heartburn, Diarrhea",Moderate,Head,Latex,Urgent
+30,6 days,Palpitations,"Hair loss, Dry mouth",Severe,Legs,Dust,Emergency
+69,1 days,Night sweats,"Fever, Cramping, Anxiety, Sneezing",Moderate,Back,None,Urgent
+85,3 days,Chest pain,"Vomiting, Sleep disturbances, Rash",Mild,Head,Dust,Emergency
+63,6 days,Diarrhea,"Rash, Nausea, Body ache, Heartburn",Severe,Back,Dust,Emergency
+86,5 days,Joint pain,"Frequent headaches, Tremors, Sneezing",Severe,Legs,Pollen,Emergency
+90,7 days,Shortness of breath,"Diarrhea, Sweating, Light sensitivity",Severe,Back,Penicillin,Emergency
+88,4 days,Sore throat,,Severe,Back,Pollen,Emergency
+37,4 days,Blurred vision,"Light sensitivity, Diarrhea",Mild,Arms,Pollen,Urgent
+84,2 days,Swelling,"Sore throat, Body ache, Burning sensation, Sweating",Severe,Arms,Dust,Emergency
+89,4 days,Muscle weakness,"Hair loss, Sweating, Depression",Severe,Neck,Latex,Emergency
+49,1 days,Back pain,"Tinnitus, Chills, Fever, Nausea",Mild,Back,Latex,Home Care
+89,2 days,Fever,Heartburn,Moderate,Chest,Peanuts,Urgent
+74,7 days,Constipation,"Depression, Diarrhea",Severe,Head,None,Emergency
+42,5 days,Swelling,"Body ache, Sweating",Severe,Legs,Dust,Emergency
+28,3 days,Skin rash,Swelling,Moderate,Legs,Pollen,Urgent
+42,2 days,Sore throat,"Sneezing, Chills",Moderate,Head,Penicillin,Urgent
+32,5 days,Burning while urinating,"Light sensitivity, Tinnitus, Cough, Heartburn",Mild,Head,Dust,Urgent
+6,6 days,Itching,,Mild,Legs,Dust,Urgent
+80,4 days,Frequent urination,,Moderate,Back,Pollen,Urgent
+88,3 days,Frequent urination,,Severe,Back,Pollen,Emergency
+64,7 days,Palpitations,,Moderate,Back,Dust,Urgent
+30,3 days,Night sweats,Fever,Moderate,Upper abdomen,Dust,Urgent
+17,8 days,Blurred vision,"Diarrhea, Loss of balance, Hair loss",Moderate,Lower abdomen,Dust,Urgent
+21,8 days,Burning while urinating,"Tinnitus, Sore throat, Frequent headaches, Body ache",Moderate,Neck,Dust,Urgent
+83,7 days,Skin rash,"Sweating, Body ache",Severe,Head,Pollen,Emergency
+64,9 days,Diarrhea,Frequent headaches,Mild,Arms,None,Urgent
+50,10 days,Tingling sensation,"Joint stiffness, Body ache, Dry mouth",Mild,Head,Penicillin,Urgent
+72,7 days,Frequent urination,"Fever, Vomiting",Mild,Neck,Peanuts,Urgent
+63,2 days,Burning while urinating,Body ache,Mild,Legs,Dust,Home Care
+43,7 days,Muscle weakness,,Mild,Lower abdomen,Pollen,Urgent
+63,2 days,Night sweats,Sleep disturbances,Moderate,Upper abdomen,Penicillin,Urgent
+39,4 days,Abdominal pain,"Swelling, Cough, Depression",Moderate,Lower abdomen,Dust,Urgent
+82,6 days,Diarrhea,"Light sensitivity, Body ache, Sore throat",Moderate,Arms,Pollen,Urgent
+20,8 days,Cold extremities,,Severe,Lower abdomen,None,Emergency
+39,3 days,Cold extremities,Anxiety,Moderate,Back,Latex,Urgent
+77,7 days,Abdominal pain,,Moderate,Head,Pollen,Urgent
+69,3 days,Skin rash,Loss of balance,Severe,Head,Penicillin,Emergency
+57,6 days,Back pain,,Mild,Back,Penicillin,Urgent
+30,1 days,Itching,Body ache,Mild,Back,Latex,Home Care
+15,7 days,Itching,Fever,Moderate,Upper abdomen,Penicillin,Urgent
+59,5 days,Chest pain,"Hair loss, Depression, Chills, Cough",Severe,Chest,Peanuts,Emergency
+3,10 days,Bruising,,Moderate,Legs,Dust,Urgent
+77,5 days,Fever,Frequent headaches,Severe,Chest,Peanuts,Emergency
+37,3 days,Sore throat,"Nausea, Heartburn, Sneezing",Severe,Lower abdomen,Penicillin,Emergency
+4,8 days,Ear pain,Sore throat,Severe,Arms,Peanuts,Emergency
+41,8 days,Weight loss,,Severe,Neck,Peanuts,Emergency
+6,3 days,Itching,"Tremors, Depression, Nausea",Severe,Lower abdomen,Peanuts,Emergency
+54,8 days,Swelling,"Sleep disturbances, Loss of smell",Moderate,Legs,Pollen,Urgent
+87,3 days,Ear pain,"Tinnitus, Depression",Severe,Legs,Latex,Emergency
+64,3 days,Ear pain,"Cramping, Sleep disturbances",Mild,Head,Penicillin,Home Care
+41,9 days,Headache,,Severe,Back,Latex,Emergency
+23,3 days,Dizziness,"Burning sensation, Cough, Body ache",Moderate,Back,Dust,Urgent
+55,2 days,Chest pain,Cramping,Moderate,Legs,Dust,Emergency
+87,7 days,Frequent urination,"Sleep disturbances, Sweating",Mild,Back,Latex,Urgent
+41,9 days,Dizziness,"Tinnitus, Loss of smell, Rash",Mild,Arms,Penicillin,Urgent
+57,2 days,Mood swings,,Severe,Chest,Latex,Emergency
+44,2 days,Frequent urination,Sweating,Severe,Neck,Pollen,Emergency
+34,6 days,Cold extremities,"Sleep disturbances, Frequent headaches, Tremors",Mild,Arms,None,Urgent
+36,10 days,Swelling,"Sweating, Light sensitivity, Chills, Frequent headaches",Severe,Upper abdomen,Peanuts,Emergency
+62,2 days,Fatigue,"Tinnitus, Chills, Burning sensation, Body ache",Mild,Back,Pollen,Home Care
+75,9 days,Mood swings,"Dry mouth, Loss of balance, Rash",Severe,Arms,Penicillin,Emergency
+15,8 days,Weight loss,"Chills, Light sensitivity, Rash, Anxiety",Moderate,Upper abdomen,Dust,Urgent
+71,1 days,Skin rash,"Sore throat, Depression, Sleep disturbances, Fever",Severe,Head,Peanuts,Emergency
+17,2 days,Ear pain,"Cough, Frequent headaches",Moderate,Chest,Latex,Urgent
+51,2 days,Runny nose,"Sore throat, Depression",Moderate,Head,Latex,Urgent
+54,3 days,Cough,,Moderate,Upper abdomen,Dust,Urgent
+72,3 days,Dizziness,"Fever, Rash, Sore throat, Nausea",Moderate,Head,Pollen,Urgent
+77,1 days,Dizziness,,Moderate,Legs,Penicillin,Urgent
+35,8 days,Fatigue,"Dry mouth, Frequent headaches, Cough, Loss of balance",Moderate,Head,None,Urgent
+33,1 days,Vomiting,"Tinnitus, Sweating",Severe,Legs,Latex,Emergency
+77,5 days,Dizziness,"Burning sensation, Diarrhea",Mild,Lower abdomen,Dust,Urgent
+67,6 days,Constipation,"Dry mouth, Fever, Cramping",Severe,Neck,None,Emergency
+13,3 days,Cold extremities,"Depression, Anxiety, Loss of smell",Moderate,Lower abdomen,Dust,Urgent
+37,2 days,Diarrhea,"Loss of balance, Sneezing, Sore throat, Dry mouth",Mild,Head,Dust,Home Care
+82,6 days,Burning while urinating,"Sleep disturbances, Loss of smell",Moderate,Lower abdomen,Pollen,Urgent
+12,10 days,Headache,Sneezing,Mild,Neck,None,Urgent
+56,8 days,Sore throat,"Fever, Sore throat",Mild,Lower abdomen,Peanuts,Urgent
+70,8 days,Shortness of breath,"Swelling, Sleep disturbances, Diarrhea, Light sensitivity",Severe,Chest,Peanuts,Emergency
+28,4 days,Cold extremities,Sneezing,Moderate,Neck,Peanuts,Urgent
+81,10 days,Burning while urinating,Depression,Severe,Arms,Penicillin,Emergency
+55,1 days,Headache,,Severe,Lower abdomen,Latex,Emergency
+33,4 days,Fever,Sore throat,Mild,Legs,Latex,Urgent
+68,9 days,Abdominal pain,,Moderate,Arms,Latex,Urgent
+84,5 days,Cold extremities,"Light sensitivity, Joint stiffness, Tremors",Severe,Arms,Dust,Emergency
+45,3 days,Ear pain,"Hair loss, Sweating",Severe,Back,None,Emergency
+42,7 days,Bruising,"Loss of balance, Nausea, Loss of smell",Severe,Back,Dust,Emergency
+11,7 days,Tingling sensation,"Cramping, Sore throat, Sneezing, Light sensitivity",Severe,Legs,Peanuts,Emergency
+37,7 days,Swelling,"Sweating, Chills",Severe,Upper abdomen,Pollen,Emergency
+69,5 days,Sore throat,,Mild,Back,Dust,Urgent
+68,10 days,Muscle weakness,"Sneezing, Depression, Tremors",Mild,Back,Latex,Urgent
+5,4 days,Constipation,"Joint stiffness, Vomiting, Swelling",Mild,Arms,Penicillin,Urgent
+4,2 days,Skin rash,"Sleep disturbances, Vomiting, Sweating, Swelling",Moderate,Lower abdomen,Dust,Urgent
+72,6 days,Sore throat,"Joint stiffness, Rash, Frequent headaches",Moderate,Neck,Dust,Urgent
+55,7 days,Swelling,,Mild,Head,Latex,Urgent
+40,4 days,Tingling sensation,"Cough, Swelling",Mild,Head,Peanuts,Urgent
+77,5 days,Burning while urinating,,Moderate,Arms,Peanuts,Urgent
+85,10 days,Cold extremities,"Burning sensation, Sweating, Depression",Severe,Upper abdomen,None,Emergency
+57,9 days,Shortness of breath,,Mild,Upper abdomen,None,Emergency
+52,7 days,Muscle weakness,,Moderate,Head,Latex,Urgent
+67,6 days,Chest pain,"Body ache, Rash, Tinnitus",Severe,Head,None,Emergency
+55,10 days,Ear pain,,Mild,Head,Dust,Urgent
+26,10 days,Vomiting,"Frequent headaches, Cough, Sneezing",Severe,Upper abdomen,Dust,Emergency
+14,5 days,Muscle weakness,"Burning sensation, Heartburn, Tremors, Frequent headaches",Mild,Legs,Peanuts,Urgent
+22,1 days,Dizziness,,Moderate,Chest,Dust,Urgent
+83,4 days,Constipation,,Mild,Arms,Dust,Urgent
+57,8 days,Cough,,Severe,Head,Penicillin,Emergency
+74,5 days,Muscle weakness,"Nausea, Frequent headaches",Mild,Chest,Peanuts,Urgent
+45,10 days,Bruising,"Sweating, Body ache, Anxiety, Dry mouth",Mild,Chest,Peanuts,Urgent
+50,7 days,Joint pain,"Hair loss, Dry mouth",Mild,Neck,Dust,Urgent
+37,6 days,Night sweats,"Diarrhea, Fever, Swelling",Severe,Lower abdomen,Dust,Emergency
+2,4 days,Mood swings,"Vomiting, Tremors, Cramping, Depression",Severe,Arms,None,Emergency
+81,7 days,Nausea,Swelling,Mild,Head,Latex,Urgent
+75,10 days,Tingling sensation,"Loss of balance, Sore throat, Heartburn, Sleep disturbances",Moderate,Lower abdomen,Latex,Urgent
+63,9 days,Nausea,Nausea,Severe,Chest,None,Emergency
+84,5 days,Sore throat,Cough,Severe,Lower abdomen,Penicillin,Emergency
+79,9 days,Runny nose,"Fever, Loss of smell, Diarrhea",Severe,Back,Pollen,Emergency
+61,4 days,Burning while urinating,"Vomiting, Tinnitus, Sleep disturbances",Severe,Arms,Pollen,Emergency
+21,2 days,Itching,"Hair loss, Rash, Chills",Moderate,Upper abdomen,Pollen,Urgent
+26,8 days,Muscle weakness,"Dry mouth, Sleep disturbances, Frequent headaches",Moderate,Back,Peanuts,Urgent
+24,4 days,Vomiting,,Mild,Back,Latex,Urgent
+10,2 days,Cough,,Severe,Arms,Pollen,Emergency
+81,2 days,Frequent urination,,Severe,Back,Peanuts,Emergency
+60,10 days,Ear pain,"Body ache, Cramping, Hair loss",Severe,Arms,Latex,Emergency
+44,5 days,Joint pain,,Mild,Legs,Dust,Urgent
+34,3 days,Cold extremities,"Hair loss, Rash, Tinnitus",Severe,Upper abdomen,None,Emergency
+62,10 days,Fatigue,,Severe,Back,Penicillin,Emergency
+24,2 days,Skin rash,"Depression, Vomiting, Swelling",Mild,Chest,Pollen,Home Care
+90,8 days,Headache,,Moderate,Head,Peanuts,Urgent
+85,6 days,Shortness of breath,"Dry mouth, Anxiety, Sweating",Severe,Head,Peanuts,Emergency
+6,4 days,Mood swings,"Loss of smell, Dry mouth, Rash",Mild,Neck,Latex,Urgent
+22,5 days,Cold extremities,"Hair loss, Cough",Severe,Legs,Latex,Emergency
+25,4 days,Weight loss,Rash,Severe,Arms,Latex,Emergency
+62,1 days,Dizziness,"Sneezing, Nausea, Chills, Light sensitivity",Moderate,Legs,Latex,Urgent
+27,8 days,Diarrhea,,Severe,Legs,Pollen,Emergency
+56,6 days,Vomiting,,Severe,Upper abdomen,Pollen,Emergency
+83,8 days,Abdominal pain,"Chills, Body ache",Moderate,Legs,None,Urgent
+54,6 days,Cough,Frequent headaches,Mild,Lower abdomen,None,Urgent
+63,9 days,Muscle weakness,Sneezing,Mild,Back,Latex,Urgent
+73,10 days,Frequent urination,Hair loss,Mild,Lower abdomen,Pollen,Urgent
+86,1 days,Tingling sensation,,Severe,Chest,Penicillin,Emergency
+69,2 days,Constipation,"Rash, Loss of smell, Sore throat",Mild,Lower abdomen,Penicillin,Home Care
+20,5 days,Frequent urination,Sleep disturbances,Mild,Head,Dust,Urgent
+75,3 days,Ear pain,Body ache,Severe,Upper abdomen,Penicillin,Emergency
+67,9 days,Skin rash,"Nausea, Heartburn",Severe,Upper abdomen,Penicillin,Emergency
+44,7 days,Shortness of breath,Cough,Moderate,Neck,Pollen,Emergency
+48,6 days,Back pain,Chills,Moderate,Lower abdomen,Penicillin,Urgent
+63,1 days,Back pain,"Tremors, Fever",Severe,Legs,Penicillin,Emergency
+2,10 days,Constipation,Chills,Severe,Lower abdomen,Pollen,Emergency
+46,2 days,Burning while urinating,,Mild,Arms,Dust,Home Care
+55,9 days,Night sweats,Sneezing,Moderate,Lower abdomen,Penicillin,Urgent
+85,2 days,Burning while urinating,"Joint stiffness, Diarrhea, Sneezing, Light sensitivity",Severe,Head,Pollen,Emergency
+59,3 days,Fatigue,,Mild,Lower abdomen,Penicillin,Home Care
+31,8 days,Vomiting,,Mild,Chest,Peanuts,Urgent
+46,7 days,Itching,Loss of smell,Mild,Back,Peanuts,Urgent
+65,8 days,Mood swings,"Burning sensation, Fever",Moderate,Arms,None,Urgent
+49,3 days,Burning while urinating,Tremors,Severe,Legs,Latex,Emergency
+51,8 days,Itching,,Mild,Lower abdomen,Dust,Urgent
+68,3 days,Itching,"Sore throat, Frequent headaches",Moderate,Back,Peanuts,Urgent
+2,3 days,Abdominal pain,,Mild,Arms,Penicillin,Home Care
+28,4 days,Tingling sensation,"Cough, Tremors, Cramping, Light sensitivity",Mild,Head,None,Urgent
+32,5 days,Constipation,Joint stiffness,Mild,Legs,None,Urgent
+1,3 days,Swelling,"Sneezing, Heartburn",Moderate,Neck,Dust,Urgent
+77,7 days,Palpitations,"Sneezing, Anxiety",Mild,Head,Peanuts,Urgent
+15,4 days,Skin rash,,Severe,Lower abdomen,Peanuts,Emergency
+56,8 days,Abdominal pain,,Severe,Lower abdomen,None,Emergency
+50,1 days,Shortness of breath,Loss of smell,Moderate,Upper abdomen,Peanuts,Emergency
+43,7 days,Joint pain,"Cough, Sore throat, Burning sensation",Severe,Head,Peanuts,Emergency
+58,8 days,Diarrhea,"Frequent headaches, Diarrhea, Depression",Moderate,Arms,None,Urgent
+31,4 days,Dizziness,"Sweating, Tinnitus, Sore throat, Sleep disturbances",Moderate,Chest,None,Urgent
+35,1 days,Loss of consciousness,Sleep disturbances,Severe,Neck,Penicillin,Emergency
+32,7 days,Loss of consciousness,Tinnitus,Mild,Head,None,Emergency
+67,8 days,Back pain,"Diarrhea, Chills, Loss of balance, Frequent headaches",Moderate,Legs,Penicillin,Urgent
+71,5 days,Tingling sensation,Dry mouth,Mild,Legs,Latex,Urgent
+67,1 days,Bruising,"Depression, Swelling, Sweating, Chills",Mild,Lower abdomen,Dust,Home Care
+77,8 days,Dizziness,"Tremors, Depression, Cramping, Dry mouth",Moderate,Neck,None,Urgent
+72,7 days,Palpitations,"Sore throat, Joint stiffness, Sneezing, Body ache",Moderate,Back,Penicillin,Urgent
+48,10 days,Shortness of breath,"Depression, Tremors, Body ache, Dry mouth",Severe,Arms,Penicillin,Emergency
+15,8 days,Tingling sensation,"Depression, Rash, Tremors, Fever",Severe,Back,Latex,Emergency
+14,7 days,Back pain,"Tremors, Hair loss",Moderate,Chest,None,Urgent
+12,7 days,Headache,,Severe,Legs,None,Emergency
+38,1 days,Blurred vision,Sweating,Mild,Lower abdomen,Latex,Home Care
+63,2 days,Headache,,Severe,Neck,Dust,Emergency
+26,5 days,Burning while urinating,"Loss of balance, Tremors",Moderate,Lower abdomen,Latex,Urgent
+34,10 days,Joint pain,Swelling,Mild,Back,None,Urgent
+46,8 days,Palpitations,"Body ache, Cramping, Joint stiffness, Tinnitus",Severe,Head,Peanuts,Emergency
+5,7 days,Frequent urination,"Heartburn, Nausea",Severe,Back,Pollen,Emergency
+14,6 days,Cough,"Vomiting, Loss of balance, Cough",Mild,Neck,Latex,Urgent
+70,10 days,Sore throat,Tremors,Moderate,Legs,None,Urgent
+49,10 days,Sore throat,"Anxiety, Burning sensation",Mild,Head,Pollen,Urgent
+71,10 days,Bruising,"Tremors, Loss of balance, Sore throat",Severe,Upper abdomen,Penicillin,Emergency
+82,10 days,Chest pain,Chills,Mild,Lower abdomen,Latex,Emergency
+59,9 days,Ear pain,"Sleep disturbances, Swelling, Frequent headaches, Joint stiffness",Severe,Neck,None,Emergency
+61,10 days,Fever,Vomiting,Severe,Chest,Pollen,Emergency
+43,2 days,Swelling,"Rash, Sleep disturbances, Tremors",Severe,Chest,Penicillin,Emergency
+36,8 days,Abdominal pain,Joint stiffness,Severe,Chest,Latex,Emergency
+25,5 days,Weight loss,Sleep disturbances,Moderate,Arms,None,Urgent
+51,4 days,Fatigue,"Sneezing, Loss of balance",Severe,Legs,Peanuts,Emergency
+51,8 days,Tingling sensation,Diarrhea,Mild,Upper abdomen,Pollen,Urgent
+67,3 days,Constipation,"Tinnitus, Joint stiffness, Swelling",Mild,Upper abdomen,Peanuts,Home Care
+84,7 days,Vomiting,Nausea,Mild,Lower abdomen,Peanuts,Urgent
+16,3 days,Loss of consciousness,,Severe,Arms,Peanuts,Emergency
+8,5 days,Blurred vision,"Tremors, Dry mouth, Sweating",Severe,Upper abdomen,Dust,Emergency
+66,5 days,Muscle weakness,"Hair loss, Cough, Burning sensation",Mild,Head,Dust,Urgent
+30,5 days,Dizziness,Heartburn,Mild,Upper abdomen,None,Urgent
+8,3 days,Ear pain,"Rash, Swelling",Severe,Chest,Penicillin,Emergency
+49,8 days,Fatigue,"Heartburn, Hair loss, Vomiting, Cough",Moderate,Head,Peanuts,Urgent
+71,10 days,Shortness of breath,"Loss of balance, Nausea, Dry mouth, Sore throat",Mild,Neck,Dust,Emergency
+58,5 days,Headache,"Frequent headaches, Light sensitivity, Swelling",Mild,Chest,Latex,Urgent
+51,10 days,Back pain,"Vomiting, Tremors, Sweating, Joint stiffness",Severe,Arms,Penicillin,Emergency
+65,8 days,Fever,"Cramping, Nausea",Severe,Legs,Penicillin,Emergency
+8,8 days,Night sweats,Frequent headaches,Moderate,Back,Dust,Urgent
+38,10 days,Vomiting,,Severe,Arms,Latex,Emergency
+89,2 days,Loss of consciousness,Dry mouth,Mild,Head,Peanuts,Emergency
+60,1 days,Nausea,,Mild,Arms,Peanuts,Home Care
+82,5 days,Blurred vision,"Rash, Sleep disturbances, Burning sensation, Depression",Mild,Arms,Peanuts,Urgent
+8,7 days,Cough,Diarrhea,Mild,Lower abdomen,Pollen,Urgent
+89,5 days,Tingling sensation,"Light sensitivity, Loss of balance, Tremors, Cough",Moderate,Head,Latex,Urgent
+24,9 days,Weight loss,"Tremors, Frequent headaches",Severe,Back,Penicillin,Emergency
+54,2 days,Swelling,"Loss of smell, Sneezing, Hair loss",Moderate,Chest,Penicillin,Urgent
+64,4 days,Constipation,Anxiety,Moderate,Upper abdomen,Pollen,Urgent
+73,6 days,Palpitations,"Diarrhea, Fever, Hair loss, Frequent headaches",Moderate,Neck,Penicillin,Urgent
+86,5 days,Night sweats,"Frequent headaches, Nausea",Severe,Neck,Penicillin,Emergency
+85,3 days,Vomiting,,Moderate,Neck,None,Urgent
+76,9 days,Cold extremities,,Mild,Head,Penicillin,Urgent
+23,5 days,Fever,"Sweating, Vomiting",Mild,Back,Peanuts,Urgent
+67,8 days,Night sweats,,Moderate,Arms,Dust,Urgent
+81,10 days,Diarrhea,,Mild,Upper abdomen,Peanuts,Urgent
+85,1 days,Joint pain,,Moderate,Chest,Dust,Urgent
+84,2 days,Weight loss,"Tinnitus, Tremors",Mild,Legs,Penicillin,Home Care
+24,3 days,Shortness of breath,"Frequent headaches, Burning sensation, Cough",Severe,Lower abdomen,None,Emergency
+79,4 days,Sore throat,"Frequent headaches, Loss of balance, Tinnitus",Severe,Arms,Pollen,Emergency
+2,5 days,Vomiting,"Diarrhea, Heartburn, Sneezing, Body ache",Severe,Chest,Peanuts,Emergency
+21,4 days,Sore throat,"Loss of balance, Sneezing",Mild,Back,Dust,Urgent
+79,2 days,Diarrhea,"Chills, Body ache, Swelling",Severe,Lower abdomen,Latex,Emergency
+76,7 days,Skin rash,"Sore throat, Tinnitus, Cramping, Anxiety",Severe,Arms,Penicillin,Emergency
+33,2 days,Shortness of breath,Burning sensation,Severe,Arms,Pollen,Emergency
+65,6 days,Palpitations,"Loss of smell, Body ache",Moderate,Legs,Penicillin,Urgent
+69,4 days,Night sweats,"Sneezing, Sleep disturbances, Sore throat, Tinnitus",Moderate,Head,Pollen,Urgent
+8,7 days,Shortness of breath,,Mild,Back,Penicillin,Emergency
+39,6 days,Skin rash,,Severe,Legs,None,Emergency
+34,8 days,Bruising,"Light sensitivity, Diarrhea, Sleep disturbances",Moderate,Chest,Dust,Urgent
+56,3 days,Vomiting,"Hair loss, Cough, Diarrhea",Moderate,Back,Peanuts,Urgent
+55,9 days,Back pain,"Dry mouth, Body ache, Fever",Mild,Lower abdomen,Dust,Urgent
+44,5 days,Itching,,Severe,Lower abdomen,Penicillin,Emergency
+44,5 days,Fever,"Heartburn, Frequent headaches, Cramping",Severe,Legs,Pollen,Emergency
+81,2 days,Night sweats,,Severe,Arms,None,Emergency
+90,2 days,Sore throat,Fever,Severe,Legs,Latex,Emergency
+32,2 days,Blurred vision,"Loss of smell, Hair loss, Rash, Tinnitus",Mild,Chest,Latex,Home Care
+2,2 days,Back pain,Body ache,Severe,Legs,Latex,Emergency
+73,4 days,Fever,"Joint stiffness, Diarrhea, Chills",Moderate,Chest,Pollen,Urgent
+16,8 days,Back pain,"Cramping, Depression, Anxiety, Chills",Mild,Back,Latex,Urgent
+18,6 days,Ear pain,"Hair loss, Tinnitus, Frequent headaches",Moderate,Lower abdomen,Peanuts,Urgent
+82,6 days,Diarrhea,,Severe,Upper abdomen,None,Emergency
+11,3 days,Constipation,"Frequent headaches, Hair loss, Body ache",Moderate,Back,Pollen,Urgent
+48,4 days,Dizziness,"Sore throat, Sleep disturbances, Heartburn, Vomiting",Moderate,Upper abdomen,Pollen,Urgent
+88,6 days,Nausea,,Moderate,Legs,Dust,Urgent
+86,7 days,Cold extremities,"Fever, Burning sensation, Dry mouth",Moderate,Neck,Peanuts,Urgent
+39,9 days,Sore throat,"Depression, Loss of smell, Chills, Cramping",Mild,Head,Dust,Urgent
+43,9 days,Cough,,Severe,Arms,Pollen,Emergency
+88,3 days,Mood swings,,Severe,Arms,Peanuts,Emergency
+84,4 days,Runny nose,"Diarrhea, Rash, Sweating",Severe,Arms,Peanuts,Emergency
+22,9 days,Headache,"Burning sensation, Hair loss, Loss of smell, Tremors",Moderate,Legs,None,Urgent
+50,10 days,Abdominal pain,"Depression, Cough",Moderate,Lower abdomen,Penicillin,Urgent
+15,3 days,Burning while urinating,"Joint stiffness, Fever",Severe,Chest,Peanuts,Emergency
+64,5 days,Night sweats,"Diarrhea, Vomiting, Loss of smell, Light sensitivity",Moderate,Neck,Dust,Urgent
+76,7 days,Burning while urinating,"Nausea, Fever, Loss of balance",Severe,Neck,Dust,Emergency
+34,3 days,Mood swings,Tinnitus,Severe,Lower abdomen,Latex,Emergency
+68,5 days,Runny nose,"Frequent headaches, Swelling, Depression, Cramping",Moderate,Arms,Peanuts,Urgent
+43,9 days,Joint pain,,Mild,Upper abdomen,Latex,Urgent
+85,7 days,Shortness of breath,"Light sensitivity, Sweating, Depression, Body ache",Mild,Upper abdomen,Latex,Emergency
+80,3 days,Night sweats,"Fever, Tinnitus",Severe,Back,Dust,Emergency
+22,4 days,Nausea,"Loss of balance, Anxiety",Mild,Legs,None,Urgent
+73,9 days,Headache,"Rash, Joint stiffness, Dry mouth",Severe,Back,Dust,Emergency
+24,1 days,Blurred vision,"Light sensitivity, Body ache, Sneezing, Burning sensation",Severe,Lower abdomen,Pollen,Emergency
+1,1 days,Night sweats,"Dry mouth, Hair loss",Moderate,Chest,None,Urgent
+5,3 days,Abdominal pain,,Moderate,Lower abdomen,Penicillin,Urgent
+33,6 days,Back pain,Anxiety,Moderate,Chest,None,Urgent
+14,9 days,Vomiting,"Nausea, Body ache, Hair loss",Mild,Neck,Dust,Urgent
+3,1 days,Fatigue,"Joint stiffness, Sleep disturbances, Diarrhea",Mild,Chest,Dust,Home Care
+54,10 days,Dizziness,"Nausea, Tremors, Cough",Moderate,Chest,Dust,Urgent
+34,3 days,Swelling,"Frequent headaches, Swelling, Light sensitivity, Diarrhea",Severe,Lower abdomen,Latex,Emergency
+21,4 days,Nausea,"Joint stiffness, Tremors, Loss of smell",Mild,Legs,Dust,Urgent
+58,9 days,Muscle weakness,,Severe,Chest,Latex,Emergency
+65,2 days,Constipation,"Sweating, Rash, Cough",Mild,Neck,Latex,Home Care
+25,5 days,Swelling,"Diarrhea, Sleep disturbances, Rash",Severe,Lower abdomen,None,Emergency
+42,5 days,Night sweats,Loss of balance,Moderate,Neck,Dust,Urgent
+55,6 days,Cough,"Sore throat, Heartburn, Loss of balance",Moderate,Head,Peanuts,Urgent
+65,3 days,Palpitations,"Sneezing, Body ache, Cough",Severe,Legs,Penicillin,Emergency
+5,1 days,Abdominal pain,Rash,Severe,Arms,Dust,Emergency
+83,7 days,Headache,,Severe,Arms,Pollen,Emergency
+1,3 days,Fatigue,,Severe,Legs,Peanuts,Emergency
+10,2 days,Itching,"Anxiety, Heartburn, Body ache, Sneezing",Severe,Legs,Penicillin,Emergency
+41,3 days,Tingling sensation,"Swelling, Light sensitivity, Sweating, Body ache",Severe,Arms,Dust,Emergency
+9,10 days,Ear pain,"Cough, Sleep disturbances",Mild,Back,None,Urgent
+50,1 days,Diarrhea,Sneezing,Severe,Head,Dust,Emergency
+64,1 days,Joint pain,,Severe,Chest,Pollen,Emergency
+49,1 days,Itching,Fever,Moderate,Upper abdomen,Penicillin,Urgent
+40,1 days,Tingling sensation,"Body ache, Heartburn, Depression",Moderate,Legs,Pollen,Urgent
+49,2 days,Muscle weakness,Sneezing,Mild,Back,Dust,Home Care
+20,1 days,Frequent urination,"Vomiting, Sweating",Severe,Back,Penicillin,Emergency
+10,5 days,Chest pain,"Sneezing, Sweating, Burning sensation, Nausea",Mild,Back,Peanuts,Emergency
+13,9 days,Bruising,,Severe,Back,None,Emergency
+69,8 days,Palpitations,Frequent headaches,Severe,Lower abdomen,Dust,Emergency
+88,2 days,Diarrhea,"Sleep disturbances, Cough, Sneezing",Severe,Legs,None,Emergency
+20,8 days,Runny nose,,Severe,Arms,Latex,Emergency
+89,7 days,Blurred vision,,Moderate,Chest,Latex,Urgent
+84,9 days,Cough,Sneezing,Moderate,Arms,None,Urgent
+90,3 days,Joint pain,"Sneezing, Body ache",Mild,Arms,Peanuts,Home Care
+36,6 days,Muscle weakness,"Dry mouth, Nausea, Cough, Burning sensation",Moderate,Chest,None,Urgent
+14,10 days,Palpitations,"Tremors, Dry mouth",Severe,Head,Penicillin,Emergency
+69,4 days,Abdominal pain,"Light sensitivity, Cramping, Sleep disturbances",Severe,Back,Peanuts,Emergency
+67,3 days,Fatigue,"Diarrhea, Heartburn, Tremors, Loss of balance",Mild,Lower abdomen,Dust,Home Care
+14,1 days,Nausea,"Joint stiffness, Loss of balance",Severe,Neck,Latex,Emergency
+57,3 days,Mood swings,"Nausea, Swelling",Severe,Upper abdomen,Dust,Emergency
+23,6 days,Constipation,,Mild,Arms,Pollen,Urgent
+1,8 days,Night sweats,,Severe,Neck,Penicillin,Emergency
+83,9 days,Muscle weakness,"Diarrhea, Fever",Moderate,Arms,Latex,Urgent
+70,4 days,Blurred vision,,Moderate,Lower abdomen,Dust,Urgent
+54,7 days,Sore throat,"Body ache, Sneezing",Moderate,Neck,None,Urgent
+87,1 days,Palpitations,Cramping,Severe,Chest,Dust,Emergency
+28,1 days,Swelling,Dry mouth,Mild,Head,Peanuts,Home Care
+80,3 days,Headache,"Light sensitivity, Tinnitus",Severe,Upper abdomen,None,Emergency
+32,4 days,Constipation,,Moderate,Neck,Pollen,Urgent
+47,7 days,Headache,"Frequent headaches, Fever",Mild,Lower abdomen,Latex,Urgent
+58,9 days,Loss of consciousness,,Mild,Arms,Penicillin,Emergency
+45,9 days,Frequent urination,,Severe,Arms,Penicillin,Emergency
+29,1 days,Skin rash,"Tremors, Fever, Body ache",Severe,Legs,None,Emergency
+60,3 days,Tingling sensation,"Sleep disturbances, Sneezing, Fever, Sweating",Mild,Lower abdomen,Dust,Home Care
+84,1 days,Cough,"Sleep disturbances, Swelling, Burning sensation, Dry mouth",Severe,Back,Dust,Emergency
+81,7 days,Back pain,,Severe,Back,Dust,Emergency
+33,9 days,Muscle weakness,"Nausea, Fever",Mild,Chest,Peanuts,Urgent
+45,9 days,Burning while urinating,"Depression, Cramping, Loss of balance",Severe,Chest,Peanuts,Emergency
+7,6 days,Bruising,Hair loss,Mild,Upper abdomen,Dust,Urgent
+35,6 days,Tingling sensation,"Light sensitivity, Heartburn",Mild,Chest,Peanuts,Urgent
+75,7 days,Fatigue,"Tinnitus, Loss of smell, Dry mouth",Severe,Upper abdomen,Penicillin,Emergency
+56,9 days,Ear pain,Hair loss,Mild,Lower abdomen,Penicillin,Urgent
+81,7 days,Loss of consciousness,,Mild,Legs,Pollen,Emergency
+27,2 days,Constipation,"Tinnitus, Nausea, Frequent headaches, Anxiety",Mild,Head,Peanuts,Home Care
+71,10 days,Fever,"Vomiting, Swelling, Sore throat, Anxiety",Moderate,Arms,Dust,Urgent
+60,10 days,Burning while urinating,"Sore throat, Chills, Sleep disturbances, Joint stiffness",Severe,Neck,None,Emergency
+40,8 days,Runny nose,"Sleep disturbances, Dry mouth, Tinnitus",Moderate,Legs,None,Urgent
+61,9 days,Blurred vision,"Rash, Anxiety, Joint stiffness, Sore throat",Severe,Arms,None,Emergency
+85,2 days,Bruising,"Loss of balance, Tremors, Hair loss, Loss of smell",Mild,Legs,None,Home Care
+53,9 days,Swelling,"Joint stiffness, Cramping, Depression",Severe,Lower abdomen,Peanuts,Emergency
+85,1 days,Tingling sensation,"Tremors, Hair loss",Moderate,Back,Latex,Urgent
+60,9 days,Sore throat,,Mild,Neck,Peanuts,Urgent
+8,2 days,Chest pain,"Anxiety, Cough, Loss of smell",Moderate,Head,None,Emergency
+80,6 days,Frequent urination,,Severe,Arms,Peanuts,Emergency
+75,6 days,Mood swings,"Cough, Depression, Body ache",Severe,Arms,Pollen,Emergency
+86,10 days,Frequent urination,,Severe,Lower abdomen,Dust,Emergency
+37,10 days,Sore throat,"Joint stiffness, Loss of smell",Moderate,Chest,None,Urgent
+67,2 days,Blurred vision,"Joint stiffness, Heartburn, Frequent headaches, Chills",Mild,Lower abdomen,Peanuts,Home Care
+79,10 days,Diarrhea,"Heartburn, Sneezing",Mild,Legs,Pollen,Urgent
+37,9 days,Itching,"Joint stiffness, Tremors, Chills, Fever",Moderate,Chest,Dust,Urgent
+55,10 days,Palpitations,"Depression, Loss of smell, Sleep disturbances, Diarrhea",Severe,Head,Peanuts,Emergency
+25,7 days,Constipation,,Moderate,Chest,Latex,Urgent
+41,5 days,Frequent urination,"Sweating, Tinnitus, Fever",Mild,Head,Latex,Urgent
+58,4 days,Abdominal pain,Vomiting,Severe,Neck,Latex,Emergency
+1,10 days,Night sweats,"Loss of balance, Sweating, Cough",Severe,Arms,Penicillin,Emergency
+30,5 days,Palpitations,Anxiety,Moderate,Upper abdomen,Penicillin,Urgent
+42,8 days,Mood swings,"Tinnitus, Depression, Nausea, Anxiety",Severe,Chest,Pollen,Emergency
+45,10 days,Vomiting,"Body ache, Joint stiffness, Loss of smell, Burning sensation",Severe,Head,Penicillin,Emergency
+65,1 days,Fatigue,"Diarrhea, Burning sensation",Mild,Chest,Peanuts,Home Care
+73,4 days,Skin rash,Dry mouth,Moderate,Upper abdomen,Penicillin,Urgent
+28,5 days,Weight loss,"Sweating, Sore throat, Tinnitus, Anxiety",Severe,Chest,None,Emergency
+34,9 days,Skin rash,"Loss of smell, Frequent headaches, Nausea, Dry mouth",Severe,Lower abdomen,None,Emergency
+87,3 days,Vomiting,"Sleep disturbances, Vomiting, Rash, Cough",Severe,Neck,Dust,Emergency
+19,3 days,Dizziness,Dry mouth,Mild,Upper abdomen,Dust,Home Care
+27,8 days,Nausea,,Mild,Neck,None,Urgent
+72,5 days,Skin rash,"Frequent headaches, Loss of balance",Mild,Head,Latex,Urgent
+8,2 days,Abdominal pain,"Swelling, Frequent headaches, Light sensitivity, Dry mouth",Severe,Neck,Pollen,Emergency
+90,1 days,Vomiting,"Burning sensation, Body ache, Cough",Severe,Upper abdomen,Peanuts,Emergency
+71,10 days,Cough,"Cramping, Depression, Hair loss",Mild,Upper abdomen,Latex,Urgent
+34,5 days,Chest pain,"Burning sensation, Heartburn, Loss of balance",Moderate,Neck,Penicillin,Emergency
+45,6 days,Night sweats,"Burning sensation, Diarrhea, Loss of smell, Body ache",Mild,Legs,Penicillin,Urgent
+55,4 days,Cold extremities,Sweating,Severe,Lower abdomen,Pollen,Emergency
+37,10 days,Sore throat,,Severe,Upper abdomen,Penicillin,Emergency
+40,2 days,Bruising,"Loss of smell, Sweating",Moderate,Upper abdomen,Dust,Urgent
+11,10 days,Skin rash,"Body ache, Nausea",Moderate,Arms,Penicillin,Urgent
+74,8 days,Mood swings,"Sweating, Sore throat, Diarrhea",Moderate,Neck,Latex,Urgent
+38,10 days,Cough,"Tinnitus, Body ache, Sore throat, Hair loss",Mild,Chest,Peanuts,Urgent
+73,4 days,Runny nose,"Vomiting, Rash, Burning sensation",Severe,Head,Latex,Emergency
+20,2 days,Runny nose,Frequent headaches,Mild,Back,Dust,Home Care
+57,10 days,Night sweats,,Mild,Back,None,Urgent
+50,3 days,Runny nose,Swelling,Moderate,Head,None,Urgent
+86,5 days,Cold extremities,"Anxiety, Loss of smell, Rash",Severe,Head,Dust,Emergency
+84,7 days,Dizziness,"Burning sensation, Rash, Hair loss, Nausea",Moderate,Lower abdomen,None,Urgent
+10,10 days,Joint pain,"Fever, Hair loss, Heartburn, Sore throat",Severe,Arms,None,Emergency
+33,10 days,Tingling sensation,,Mild,Upper abdomen,Penicillin,Urgent
+80,2 days,Tingling sensation,"Frequent headaches, Heartburn, Sneezing, Cramping",Severe,Chest,None,Emergency
+21,8 days,Night sweats,"Burning sensation, Light sensitivity",Moderate,Back,Dust,Urgent
+54,9 days,Joint pain,"Anxiety, Body ache, Cramping, Light sensitivity",Moderate,Legs,None,Urgent
+66,3 days,Bruising,Sweating,Mild,Back,Latex,Home Care
+12,7 days,Weight loss,,Moderate,Chest,Dust,Urgent
+25,10 days,Skin rash,"Sore throat, Depression, Cough",Mild,Chest,Peanuts,Urgent
+26,2 days,Runny nose,"Frequent headaches, Hair loss",Mild,Lower abdomen,None,Home Care
+43,7 days,Abdominal pain,Tinnitus,Moderate,Neck,None,Urgent
+56,4 days,Muscle weakness,"Burning sensation, Cough, Sneezing, Cramping",Severe,Head,Dust,Emergency
+54,7 days,Night sweats,"Tremors, Tinnitus, Sneezing",Mild,Lower abdomen,Pollen,Urgent
+56,10 days,Night sweats,Rash,Moderate,Head,Penicillin,Urgent
+82,7 days,Diarrhea,"Light sensitivity, Fever",Mild,Neck,Peanuts,Urgent
+50,6 days,Dizziness,"Cough, Body ache, Frequent headaches, Depression",Mild,Upper abdomen,Dust,Urgent
+81,2 days,Night sweats,"Sweating, Cramping",Severe,Chest,Latex,Emergency
+5,2 days,Itching,"Burning sensation, Sore throat, Dry mouth, Nausea",Severe,Arms,Peanuts,Emergency
+2,2 days,Frequent urination,"Anxiety, Body ache, Diarrhea",Severe,Arms,Pollen,Emergency
+16,2 days,Itching,"Hair loss, Tinnitus",Severe,Arms,Penicillin,Emergency
+50,1 days,Chest pain,"Cough, Loss of smell, Nausea",Mild,Back,Penicillin,Emergency
+33,10 days,Itching,Fever,Mild,Back,Penicillin,Urgent
+75,8 days,Bruising,"Burning sensation, Light sensitivity, Nausea, Sneezing",Severe,Lower abdomen,None,Emergency
+5,8 days,Sore throat,"Loss of balance, Chills, Dry mouth, Frequent headaches",Moderate,Legs,Latex,Urgent
+43,10 days,Cough,"Dry mouth, Light sensitivity, Sneezing, Cramping",Mild,Lower abdomen,None,Urgent
+40,6 days,Sore throat,"Fever, Cramping, Sore throat",Severe,Arms,Penicillin,Emergency
+19,6 days,Runny nose,"Frequent headaches, Light sensitivity, Loss of smell",Mild,Back,Pollen,Urgent
+23,4 days,Dizziness,"Rash, Cramping, Burning sensation",Severe,Legs,Dust,Emergency
+30,9 days,Nausea,,Mild,Neck,Latex,Urgent
+71,4 days,Constipation,"Heartburn, Nausea, Dry mouth",Severe,Back,None,Emergency
+56,8 days,Burning while urinating,,Moderate,Neck,None,Urgent
+77,1 days,Mood swings,,Severe,Upper abdomen,Dust,Emergency
+70,8 days,Nausea,Sneezing,Moderate,Arms,Latex,Urgent
+11,10 days,Shortness of breath,,Mild,Neck,None,Emergency
+84,8 days,Fever,,Mild,Arms,Dust,Urgent
+34,3 days,Skin rash,"Fever, Cough",Severe,Back,Dust,Emergency
+47,3 days,Ear pain,,Severe,Back,Latex,Emergency
+67,9 days,Fatigue,"Sore throat, Loss of smell, Vomiting",Moderate,Arms,Penicillin,Urgent
+22,3 days,Diarrhea,Hair loss,Mild,Neck,Latex,Home Care
+34,5 days,Constipation,Dry mouth,Moderate,Lower abdomen,Peanuts,Urgent
+72,3 days,Nausea,"Anxiety, Burning sensation, Diarrhea, Frequent headaches",Mild,Arms,Penicillin,Home Care
+29,8 days,Headache,"Tremors, Tinnitus, Rash",Moderate,Neck,Latex,Urgent
+12,4 days,Blurred vision,"Cramping, Joint stiffness, Swelling, Vomiting",Mild,Legs,Peanuts,Urgent
+17,9 days,Mood swings,Frequent headaches,Moderate,Arms,Pollen,Urgent
+26,9 days,Frequent urination,Vomiting,Moderate,Chest,Dust,Urgent
+43,4 days,Night sweats,Heartburn,Severe,Upper abdomen,Latex,Emergency
+86,3 days,Sore throat,"Sore throat, Swelling, Heartburn",Moderate,Legs,Latex,Urgent
+81,4 days,Cough,"Sweating, Joint stiffness, Loss of balance, Loss of smell",Moderate,Arms,Penicillin,Urgent
+34,5 days,Constipation,,Severe,Legs,None,Emergency
+36,1 days,Loss of consciousness,,Moderate,Neck,None,Emergency
+57,2 days,Joint pain,"Burning sensation, Sore throat, Swelling",Severe,Neck,Dust,Emergency
+18,4 days,Frequent urination,,Mild,Back,Peanuts,Urgent
+51,3 days,Chest pain,Vomiting,Severe,Upper abdomen,None,Emergency
+66,3 days,Shortness of breath,"Depression, Rash",Mild,Lower abdomen,Peanuts,Emergency
+44,10 days,Diarrhea,,Moderate,Back,Pollen,Urgent
+79,7 days,Frequent urination,"Tinnitus, Nausea, Rash, Hair loss",Mild,Lower abdomen,Peanuts,Urgent
+63,2 days,Skin rash,"Vomiting, Sweating, Cough, Sleep disturbances",Moderate,Legs,Penicillin,Urgent
+35,5 days,Shortness of breath,Sweating,Moderate,Head,Dust,Emergency
+13,1 days,Shortness of breath,,Mild,Legs,Penicillin,Emergency
+59,2 days,Bruising,,Mild,Legs,None,Home Care
+28,4 days,Vomiting,"Loss of balance, Sore throat",Mild,Neck,None,Urgent
+50,6 days,Chest pain,"Heartburn, Vomiting, Depression, Sleep disturbances",Severe,Chest,Dust,Emergency
+87,1 days,Skin rash,"Depression, Hair loss",Severe,Legs,None,Emergency
+51,6 days,Nausea,"Sweating, Fever, Nausea",Severe,Neck,Peanuts,Emergency
+2,10 days,Cold extremities,,Mild,Back,Latex,Urgent
+38,8 days,Muscle weakness,,Severe,Back,Latex,Emergency
+43,1 days,Nausea,,Severe,Upper abdomen,Peanuts,Emergency
+66,9 days,Nausea,"Rash, Heartburn, Joint stiffness, Tinnitus",Severe,Neck,None,Emergency
+19,5 days,Fatigue,"Fever, Sneezing",Severe,Back,None,Emergency
+40,9 days,Frequent urination,"Tremors, Heartburn",Mild,Upper abdomen,Penicillin,Urgent
+7,6 days,Fatigue,,Severe,Arms,Dust,Emergency
+23,1 days,Diarrhea,"Nausea, Tinnitus, Cramping",Mild,Neck,Latex,Home Care
+26,7 days,Sore throat,Swelling,Severe,Upper abdomen,Pollen,Emergency
+55,7 days,Cough,,Mild,Lower abdomen,Peanuts,Urgent
+78,7 days,Tingling sensation,Light sensitivity,Moderate,Neck,Latex,Urgent
+4,3 days,Fatigue,"Sore throat, Light sensitivity",Severe,Upper abdomen,Latex,Emergency
+89,6 days,Joint pain,Chills,Severe,Head,Latex,Emergency
+52,7 days,Frequent urination,"Rash, Light sensitivity, Tremors, Nausea",Moderate,Arms,Dust,Urgent
+86,3 days,Swelling,,Moderate,Back,None,Urgent
+39,2 days,Joint pain,"Heartburn, Loss of balance",Mild,Head,Penicillin,Home Care
+58,7 days,Shortness of breath,"Swelling, Chills, Vomiting",Moderate,Head,Peanuts,Emergency
+83,4 days,Burning while urinating,,Moderate,Head,Dust,Urgent
+65,10 days,Joint pain,,Mild,Back,None,Urgent
+24,8 days,Constipation,Loss of smell,Mild,Head,Peanuts,Urgent
+84,8 days,Burning while urinating,Hair loss,Mild,Legs,None,Urgent
+38,10 days,Mood swings,Heartburn,Mild,Neck,Penicillin,Urgent
+65,1 days,Night sweats,Burning sensation,Moderate,Head,None,Urgent
+19,8 days,Shortness of breath,"Tinnitus, Sneezing, Heartburn, Anxiety",Mild,Chest,Penicillin,Emergency
+8,10 days,Back pain,Sore throat,Mild,Legs,Pollen,Urgent
+24,9 days,Loss of consciousness,"Sore throat, Depression",Severe,Neck,Latex,Emergency
+34,3 days,Runny nose,"Joint stiffness, Loss of smell",Mild,Lower abdomen,Penicillin,Home Care
+59,2 days,Bruising,Sneezing,Moderate,Neck,Latex,Urgent
+80,10 days,Fever,Heartburn,Moderate,Arms,Dust,Urgent
+40,1 days,Skin rash,"Dry mouth, Loss of smell",Mild,Head,Peanuts,Home Care
+39,10 days,Headache,"Light sensitivity, Heartburn",Mild,Head,Latex,Urgent
+39,10 days,Cough,"Fever, Frequent headaches, Burning sensation, Swelling",Severe,Head,Penicillin,Emergency
+30,5 days,Burning while urinating,"Dry mouth, Heartburn, Rash, Fever",Moderate,Lower abdomen,Peanuts,Urgent
+75,4 days,Night sweats,"Diarrhea, Burning sensation, Sweating",Moderate,Legs,Penicillin,Urgent
+10,3 days,Constipation,,Severe,Lower abdomen,Penicillin,Emergency
+47,5 days,Palpitations,"Loss of smell, Frequent headaches, Sweating",Moderate,Legs,Penicillin,Urgent
+69,9 days,Night sweats,"Frequent headaches, Cramping",Severe,Head,Peanuts,Emergency
+29,10 days,Sore throat,,Severe,Upper abdomen,Penicillin,Emergency
+83,5 days,Cold extremities,"Hair loss, Sneezing",Mild,Lower abdomen,Pollen,Urgent
+67,7 days,Runny nose,Dry mouth,Mild,Upper abdomen,Peanuts,Urgent
+81,9 days,Fever,,Severe,Chest,Dust,Emergency
+55,8 days,Joint pain,"Diarrhea, Cramping, Sleep disturbances, Swelling",Moderate,Head,Peanuts,Urgent
+9,4 days,Fatigue,Cramping,Severe,Lower abdomen,Dust,Emergency
+12,6 days,Chest pain,"Diarrhea, Nausea, Frequent headaches, Hair loss",Severe,Lower abdomen,Peanuts,Emergency
+52,7 days,Blurred vision,Swelling,Mild,Head,Pollen,Urgent
+80,7 days,Fatigue,"Loss of smell, Heartburn, Light sensitivity, Sweating",Moderate,Chest,Penicillin,Urgent
+56,4 days,Runny nose,"Loss of smell, Sweating",Moderate,Lower abdomen,Latex,Urgent
+61,7 days,Tingling sensation,"Heartburn, Joint stiffness",Moderate,Back,Penicillin,Urgent
+56,9 days,Skin rash,"Sneezing, Tinnitus, Chills",Severe,Back,Peanuts,Emergency
+55,1 days,Dizziness,"Body ache, Rash",Severe,Head,Latex,Emergency
+4,8 days,Back pain,"Sweating, Chills, Sore throat, Loss of balance",Mild,Lower abdomen,Peanuts,Urgent
+53,1 days,Palpitations,"Tinnitus, Swelling",Mild,Upper abdomen,Peanuts,Home Care
+87,8 days,Shortness of breath,"Rash, Body ache, Fever, Sore throat",Mild,Head,Dust,Emergency
+52,6 days,Sore throat,Dry mouth,Moderate,Lower abdomen,Peanuts,Urgent
+44,1 days,Joint pain,Tremors,Severe,Back,None,Emergency
+23,6 days,Palpitations,"Nausea, Fever, Burning sensation",Moderate,Chest,Dust,Urgent
+40,10 days,Mood swings,"Sleep disturbances, Sore throat, Vomiting, Body ache",Severe,Head,Pollen,Emergency
+55,1 days,Bruising,"Tremors, Sore throat, Sleep disturbances, Vomiting",Moderate,Arms,Penicillin,Urgent
+18,1 days,Constipation,,Severe,Upper abdomen,Latex,Emergency
+5,2 days,Fatigue,"Loss of smell, Cramping",Moderate,Lower abdomen,Latex,Urgent
+66,9 days,Constipation,"Anxiety, Cramping, Chills",Mild,Lower abdomen,Penicillin,Urgent
+54,9 days,Weight loss,Tremors,Mild,Back,Peanuts,Urgent
+59,6 days,Burning while urinating,"Tremors, Rash, Sneezing",Mild,Head,Pollen,Urgent
+39,7 days,Sore throat,Rash,Severe,Back,Penicillin,Emergency
+4,9 days,Muscle weakness,,Moderate,Head,Pollen,Urgent
+29,9 days,Abdominal pain,"Sleep disturbances, Tinnitus, Frequent headaches",Mild,Chest,Penicillin,Urgent
+26,7 days,Blurred vision,"Body ache, Heartburn, Loss of smell",Mild,Legs,None,Urgent
+68,10 days,Weight loss,Tinnitus,Moderate,Upper abdomen,Penicillin,Urgent
+39,8 days,Fatigue,"Light sensitivity, Fever",Severe,Arms,Pollen,Emergency
+6,3 days,Weight loss,,Moderate,Head,Pollen,Urgent
+29,2 days,Joint pain,"Sore throat, Swelling, Dry mouth",Moderate,Chest,Dust,Urgent
+67,4 days,Skin rash,"Cramping, Sneezing, Tinnitus, Depression",Severe,Chest,Pollen,Emergency
+60,2 days,Blurred vision,Dry mouth,Moderate,Upper abdomen,None,Urgent
+31,10 days,Swelling,,Severe,Back,Penicillin,Emergency
+5,5 days,Vomiting,"Swelling, Nausea, Chills, Diarrhea",Mild,Back,None,Urgent
+59,8 days,Cold extremities,,Mild,Back,Peanuts,Urgent
+61,9 days,Sore throat,"Frequent headaches, Sweating, Loss of balance, Heartburn",Mild,Legs,Peanuts,Urgent
+32,6 days,Diarrhea,"Swelling, Sore throat, Rash, Nausea",Mild,Lower abdomen,Penicillin,Urgent
+42,1 days,Headache,"Swelling, Fever",Moderate,Neck,Pollen,Urgent
+56,8 days,Swelling,"Heartburn, Sneezing, Swelling, Tinnitus",Severe,Legs,None,Emergency
+10,3 days,Night sweats,"Heartburn, Chills",Severe,Neck,Penicillin,Emergency
+77,6 days,Back pain,,Severe,Back,Peanuts,Emergency
+24,8 days,Fever,Anxiety,Severe,Lower abdomen,Pollen,Emergency
+85,5 days,Blurred vision,"Loss of balance, Sneezing, Tinnitus",Moderate,Arms,Peanuts,Urgent
+68,6 days,Bruising,"Nausea, Cramping",Mild,Back,Latex,Urgent
+89,2 days,Tingling sensation,"Depression, Anxiety, Heartburn, Sleep disturbances",Mild,Neck,None,Home Care
+69,7 days,Weight loss,"Frequent headaches, Sore throat, Burning sensation",Mild,Legs,Dust,Urgent
+39,5 days,Itching,,Moderate,Lower abdomen,Dust,Urgent
+33,7 days,Nausea,"Hair loss, Cramping",Moderate,Head,Pollen,Urgent
+81,4 days,Fever,,Severe,Arms,Penicillin,Emergency
+55,2 days,Vomiting,"Sore throat, Loss of smell, Heartburn, Frequent headaches",Severe,Lower abdomen,Peanuts,Emergency
+28,9 days,Itching,"Heartburn, Tremors, Joint stiffness, Sweating",Mild,Head,Latex,Urgent
+80,1 days,Frequent urination,"Cramping, Body ache, Sleep disturbances, Burning sensation",Mild,Chest,None,Home Care
+17,2 days,Chest pain,"Light sensitivity, Frequent headaches, Dry mouth",Severe,Head,None,Emergency
+56,6 days,Frequent urination,"Vomiting, Fever, Tremors",Mild,Head,Pollen,Urgent
+69,7 days,Skin rash,"Loss of smell, Swelling",Moderate,Neck,Penicillin,Urgent
+29,7 days,Dizziness,"Fever, Sweating, Dry mouth, Swelling",Mild,Lower abdomen,Dust,Urgent
+77,6 days,Fatigue,,Severe,Back,Dust,Emergency
+45,5 days,Cold extremities,"Sleep disturbances, Joint stiffness, Rash, Dry mouth",Mild,Chest,Latex,Urgent
+54,2 days,Dizziness,,Severe,Arms,Dust,Emergency
+47,10 days,Tingling sensation,,Moderate,Lower abdomen,Penicillin,Urgent
+56,10 days,Burning while urinating,,Mild,Lower abdomen,Pollen,Urgent
+19,1 days,Palpitations,"Swelling, Body ache, Nausea",Mild,Lower abdomen,Penicillin,Home Care
+34,4 days,Runny nose,"Heartburn, Tremors",Severe,Chest,Latex,Emergency
+83,4 days,Shortness of breath,"Dry mouth, Cramping, Diarrhea, Fever",Mild,Lower abdomen,Dust,Emergency
+31,2 days,Diarrhea,"Anxiety, Loss of smell",Mild,Arms,None,Home Care
+10,5 days,Skin rash,"Tinnitus, Dry mouth",Moderate,Chest,Pollen,Urgent
+17,8 days,Chest pain,,Mild,Neck,Dust,Emergency
+31,4 days,Cough,"Diarrhea, Joint stiffness, Depression, Dry mouth",Severe,Head,Dust,Emergency
+51,3 days,Fatigue,"Depression, Sweating, Heartburn, Dry mouth",Mild,Neck,None,Home Care
+65,5 days,Palpitations,"Dry mouth, Body ache",Moderate,Arms,Latex,Urgent
+12,4 days,Headache,,Moderate,Upper abdomen,Peanuts,Urgent
+2,2 days,Blurred vision,"Body ache, Sneezing, Tremors, Depression",Severe,Lower abdomen,Peanuts,Emergency
+52,6 days,Muscle weakness,"Burning sensation, Hair loss",Mild,Lower abdomen,Peanuts,Urgent
+17,10 days,Fever,Diarrhea,Moderate,Arms,Dust,Urgent
+66,7 days,Constipation,"Hair loss, Loss of balance, Body ache, Cramping",Moderate,Head,Dust,Urgent
+21,5 days,Cough,Joint stiffness,Moderate,Neck,Latex,Urgent
+82,2 days,Swelling,"Vomiting, Nausea",Severe,Upper abdomen,Latex,Emergency
+66,6 days,Mood swings,"Nausea, Fever, Light sensitivity",Mild,Neck,None,Urgent
+80,6 days,Cough,,Moderate,Legs,Pollen,Urgent
+41,10 days,Shortness of breath,Fever,Moderate,Chest,Pollen,Emergency
+65,5 days,Runny nose,"Cramping, Nausea, Hair loss",Mild,Neck,Peanuts,Urgent
+33,5 days,Cold extremities,"Dry mouth, Hair loss, Sleep disturbances",Severe,Head,Latex,Emergency
+29,1 days,Abdominal pain,Swelling,Mild,Back,Pollen,Home Care
+19,9 days,Shortness of breath,"Swelling, Rash",Severe,Neck,Latex,Emergency
+31,3 days,Runny nose,"Sneezing, Dry mouth, Light sensitivity",Severe,Upper abdomen,Pollen,Emergency
+64,2 days,Nausea,Burning sensation,Moderate,Upper abdomen,Peanuts,Urgent
+46,9 days,Runny nose,"Swelling, Sore throat, Depression, Tinnitus",Moderate,Legs,Penicillin,Urgent
+44,8 days,Weight loss,"Burning sensation, Loss of smell",Severe,Lower abdomen,Dust,Emergency
+70,3 days,Shortness of breath,"Chills, Cramping",Severe,Chest,Peanuts,Emergency
+77,1 days,Blurred vision,"Cough, Light sensitivity, Loss of smell",Mild,Head,Pollen,Home Care
+23,2 days,Constipation,,Mild,Lower abdomen,Latex,Home Care
+71,9 days,Back pain,"Tinnitus, Rash",Moderate,Neck,None,Urgent
+34,4 days,Loss of consciousness,"Cough, Heartburn, Anxiety",Severe,Legs,None,Emergency
+55,7 days,Blurred vision,"Sweating, Joint stiffness, Fever, Loss of smell",Severe,Neck,Penicillin,Emergency
+6,9 days,Bruising,"Light sensitivity, Sore throat, Depression, Chills",Severe,Chest,None,Emergency
+21,10 days,Headache,Burning sensation,Mild,Back,Dust,Urgent
+67,9 days,Headache,"Nausea, Cough, Cramping, Burning sensation",Moderate,Chest,None,Urgent
+50,3 days,Weight loss,"Body ache, Cramping, Sneezing, Swelling",Moderate,Legs,Penicillin,Urgent
+32,2 days,Cold extremities,,Severe,Upper abdomen,None,Emergency
+5,1 days,Joint pain,"Depression, Nausea, Sore throat",Moderate,Lower abdomen,Latex,Urgent
+71,5 days,Abdominal pain,"Vomiting, Diarrhea, Hair loss, Chills",Moderate,Back,None,Urgent

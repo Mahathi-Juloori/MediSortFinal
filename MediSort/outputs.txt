@@ -1,0 +1,16 @@
+Emergency
+85
+1-2WEEKS
+FREQUENT urination
+LOSS OF ALANCE,Tinnitus
+Severe
+Head
+Penicillin
+
+
+
+83,6 days,Skin rash,"Fever, Vomiting, Body ache",Moderate,Head,Dust,Urgent
+2,4 days,Dizziness,,Moderate,Arms,Peanuts,Urgent
+
+
+43,1 days,Vomiting,"Loss of smell, Sore throat, Tremors",Mild,Back,None,Home Care

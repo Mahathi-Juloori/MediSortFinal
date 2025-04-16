@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediSort - Interactive Symptom Assessment</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <style>
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4cc9f0;
+      --light-color: #f8f9fa;
+      --dark-color: #212529;
+      --danger-color: #ef233c;
+      --warning-color: #ff9e00;
+      --success-color: #38b000;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: var(--dark-color);
+    }
+    
+    .assessment-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .assessment-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/medical-pattern.png') center/cover;
+      opacity: 0.1;
+    }
+    
+    .assessment-container {
+      max-width: 1200px;
+      margin: -3rem auto 3rem;
+      position: relative;
+      z-index: 10;
+    }
+    
+    .assessment-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .assessment-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+    
+    .assessment-nav {
+      background: var(--light-color);
+      padding: 1rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-step {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-step.active {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .nav-step.completed {
+      background: rgba(67, 97, 238, 0.1);
+      color: var(--primary-color);
+    }
+    
+    .step-content {
+      padding: 2rem;
+      display: none;
+    }
+    
+    .step-content.active {
+      display: block;
+      animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .form-control, .form-select {
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      border: 2px solid #e9ecef;
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus, .form-select:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+    }
+    
+    .symptom-card {
+      background: white;
+      border: 2px solid #e9ecef;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+    }
+    
+    .symptom-card:hover {
+      border-color: var(--accent-color);
+      transform: translateY(-3px);
+    }
+    
+    .symptom-card.active {
+      background: var(--primary-color);
+      color: white;
+      border-color: var(--primary-color);
+    }
+    
+    .symptom-icon {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+    }
+    
+    .body-map-container {
+      position: relative;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .body-map {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+    
+    .body-area {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(239, 35, 60, 0.3);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .body-area.active {
+      opacity: 1;
+    }
+    
+    .severity-slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 10px;
+      border-radius: 5px;
+      background: #e9ecef;
+      outline: none;
+      margin: 1.5rem 0;
+    }
+    
+    .severity-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .severity-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
+      background: var(--secondary-color);
+    }
+    
+    .severity-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -0.5rem;
+    }
+    
+    .severity-label {
+      font-size: 0.8rem;
+      color: #6c757d;
+    }
+    
+    .btn-assessment {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .btn-assessment:hover {
+      background: var(--secondary-color);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-assessment i {
+      margin-right: 0.5rem;
+    }
+    
+    .result-container {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      display: none;
+    }
+    
+    .result-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .result-icon {
+      font-size: 2rem;
+      margin-right: 1rem;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .emergency .result-icon {
+      background: rgba(239, 35, 60, 0.1);
+      color: var(--danger-color);
+    }
+    
+    .urgent .result-icon {
+      background: rgba(255, 158, 0, 0.1);
+      color: var(--warning-color);
+    }
+    
+    .routine .result-icon {
+      background: rgba(56, 176, 0, 0.1);
+      color: var(--success-color);
+    }
+    
+    .progress {
+      height: 10px;
+      border-radius: 5px;
+      margin: 1rem 0;
+    }
+    
+    .progress-bar {
+      background-color: var(--primary-color);
+      transition: width 1s ease;
+    }
+    
+    .chatbot-container {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 1000;
+    }
+    
+    .chatbot-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .chatbot-btn:hover {
+      transform: scale(1.1);
+      background: var(--secondary-color);
+    }
+    
+    .chatbot-window {
+      position: absolute;
+      bottom: 80px;
+      right: 0;
+      width: 350px;
+      max-width: 90vw;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: none;
+      transform-origin: bottom right;
+      animation: scaleIn 0.3s ease;
+    }
+    
+    @keyframes scaleIn {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    
+    .chatbot-header {
+      background: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .chatbot-messages {
+      padding: 1rem;
+      height: 300px;
+      overflow-y: auto;
+    }
+    
+    .chatbot-message {
+      margin-bottom: 1rem;
+      max-width: 80%;
+      padding: 0.75rem 1rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+    }
+    
+    .bot-message {
+      background: #f1f3f5;
+      border-top-left-radius: 5px;
+      align-self: flex-start;
+    }
+    
+    .user-message {
+      background: var(--primary-color);
+      color: white;
+      border-top-right-radius: 5px;
+      align-self: flex-end;
+      margin-left: auto;
+    }
+    
+    .chatbot-input {
+      display: flex;
+      padding: 1rem;
+      border-top: 1px solid #e9ecef;
+    }
+    
+    .chatbot-input input {
+      flex: 1;
+      border: 2px solid #e9ecef;
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
+    }
+    
+    .chatbot-input button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .triage-indicator {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      display: none;
+      z-index: 1000;
+    }
+    
+    .triage-level {
+      height: 5px;
+      border-radius: 5px;
+      background: #e9ecef;
+      margin-top: 0.5rem;
+      overflow: hidden;
+    }
+    
+    .triage-progress {
+      height: 100%;
+      background: linear-gradient(90deg, var(--success-color), var(--warning-color), var(--danger-color));
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+    
+    @media (max-width: 768px) {
+      .assessment-container {
+        margin: -1.5rem auto 1.5rem;
+      }
+      
+      .nav-step span {
+        display: none;
+      }
+      
+      .nav-step .step-number {
+        margin-right: 0;
+      }
+      
+      .chatbot-container {
+        bottom: 1rem;
+        right: 1rem;
+      }
+      
+      .triage-indicator {
+        bottom: 1rem;
+        left: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Assessment Header -->
+  <header class="assessment-header">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-3 animate__animated animate__fadeInDown">Interactive Symptom Assessment</h1>
+      <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Answer a few questions to get personalized health recommendations</p>
+    </div>
+  </header>
+
+  <!-- Assessment Container -->
+  <div class="container assessment-container">
+    <div class="assessment-card">
+      <!-- Assessment Navigation -->
+      <div class="assessment-nav d-flex justify-content-between flex-wrap">
+        <div class="nav-step active" data-step="1">
+          <span class="step-number me-2">1</span>
+          <span>Basic Info</span>
+        </div>
+        <div class="nav-step" data-step="2">
+          <span class="step-number me-2">2</span>
+          <span>Symptoms</span>
+        </div>
+        <div class="nav-step" data-step="3">
+          <span class="step-number me-2">3</span>
+          <span>Details</span>
+        </div>
+        <div class="nav-step" data-step="4">
+          <span class="step-number me-2">4</span>
+          <span>Results</span>
+        </div>
+      </div>
+
+      <!-- Assessment Form -->
+      <form id="triageForm">
+        <!-- Step 1: Basic Info -->
+        <div class="step-content active" id="step1">
+          <h3 class="mb-4">Tell us about yourself</h3>
+          
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="age" class="form-label">Age</label>
+              <input type="number" class="form-control" id="age" min="0" max="120" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="gender" class="form-label">Gender</label>
+              <select class="form-select" id="gender">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="d-flex justify-content-end mt-4">
+            <button type="button" class="btn-assessment next-step" data-next="2">
+              Next <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Symptoms -->
+        <div class="step-content" id="step2">
+          <h3 class="mb-4">What symptoms are you experiencing?</h3>
+          
+          <div class="mb-4">
+            <label for="primarySymptom" class="form-label">Primary Symptom</label>
+            <input type="text" class="form-control" id="primarySymptom" 
+                   placeholder="Start typing your main symptom..." required
+                   list="symptomSuggestions">
+            <datalist id="symptomSuggestions">
+              <option value="Dizziness">
+              <option value="Frequent urination">
+              <option value="Nausea">
+              <option value="Skin rash">
+              <option value="Blurred vision">
+              <option value="Cough">
+              <option value="Shortness of breath">
+              <option value="Diarrhea">
+              <option value="Itching">
+              <option value="Swelling">
+              <option value="Headache">
+              <option value="Muscle weakness">
+              <option value="Abdominal pain">
+              <option value="Sore throat">
+              <option value="Runny nose">
+              <option value="Fatigue">
+              <option value="Tingling sensation">
+              <option value="Bruising">
+              <option value="Back pain">
+              <option value="Loss of consciousness">
+              <option value="Palpitations">
+              <option value="Constipation">
+              <option value="Night sweats">
+              <option value="Vomiting">
+              <option value="Ear pain">
+              <option value="Weight loss">
+              <option value="Burning while urinating">
+              <option value="Mood swings">
+              <option value="Cold extremities">
+              <option value="Chest pain">
+              <option value="Fever">
+              <option value="Joint pain">
+              <option value="Anxiety">
+              <option value="Body ache">
+              <option value="Burning sensation">
+              <option value="Chills">
+              <option value="Cramping">
+              <option value="Depression">
+              <option value="Dry mouth">
+              <option value="Frequent headaches">
+              <option value="Hair loss">
+              <option value="Heartburn">
+              <option value="Joint stiffness">
+              <option value="Light sensitivity">
+              <option value="Loss of balance">
+              <option value="Loss of smell">
+              <option value="Rash">
+              <option value="Sleep disturbances">
+              <option value="Sneezing">
+              <option value="Sweating">
+              <option value="Tinnitus">
+              <option value="Tremors">
+            </datalist>
+          </div>
+          
+          <div class="mb-4">
+            <label class="form-label">Additional Symptoms</label>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Dizziness">
+                  <div class="symptom-icon">
+                    <i class="fas fa-dizzy"></i>
+                  </div>
+                  <span>Dizziness</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Frequent urination">
+                  <div class="symptom-icon">
+                    <i class="fas fa-toilet"></i>
+                  </div>
+                  <span>Frequent urination</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Nausea">
+                  <div class="symptom-icon">
+                    <i class="fas fa-stomach"></i>
+                  </div>
+                  <span>Nausea</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Skin rash">
+                  <div class="symptom-icon">
+                    <i class="fas fa-allergies"></i>
+                  </div>
+                  <span>Skin rash</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Blurred vision">
+                  <div class="symptom-icon">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <span>Blurred vision</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Cough">
+                  <div class="symptom-icon">
+                    <i class="fas fa-lungs"></i>
+                  </div>
+                  <span>Cough</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Shortness of breath">
+                  <div class="symptom-icon">
+                    <i class="fas fa-wind"></i>
+                  </div>
+                  <span>Shortness of breath</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Diarrhea">
+                  <div class="symptom-icon">
+                    <i class="fas fa-toilet-paper"></i>
+                  </div>
+                  <span>Diarrhea</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Itching">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-paper"></i>
+                  </div>
+                  <span>Itching</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Swelling">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-holding-medical"></i>
+                  </div>
+                  <span>Swelling</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Headache">
+                  <div class="symptom-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <span>Headache</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Muscle weakness">
+                  <div class="symptom-icon">
+                    <i class="fas fa-dumbbell"></i>
+                  </div>
+                  <span>Muscle weakness</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Abdominal pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-stomach"></i>
+                  </div>
+                  <span>Abdominal pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Sore throat">
+                  <div class="symptom-icon">
+                    <i class="fas fa-throat"></i>
+                  </div>
+                  <span>Sore throat</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Runny nose">
+                  <div class="symptom-icon">
+                    <i class="fas fa-nose"></i>
+                  </div>
+                  <span>Runny nose</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Fatigue">
+                  <div class="symptom-icon">
+                    <i class="fas fa-tired"></i>
+                  </div>
+                  <span>Fatigue</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Tingling sensation">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-paper"></i>
+                  </div>
+                  <span>Tingling sensation</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Bruising">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-holding-medical"></i>
+                  </div>
+                  <span>Bruising</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Back pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-backward"></i>
+                  </div>
+                  <span>Back pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Loss of consciousness">
+                  <div class="symptom-icon">
+                    <i class="fas fa-user-injured"></i>
+                  </div>
+                  <span>Loss of consciousness</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Palpitations">
+                  <div class="symptom-icon">
+                    <i class="fas fa-heartbeat"></i>
+                  </div>
+                  <span>Palpitations</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Constipation">
+                  <div class="symptom-icon">
+                    <i class="fas fa-toilet"></i>
+                  </div>
+                  <span>Constipation</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Night sweats">
+                  <div class="symptom-icon">
+                    <i class="fas fa-moon"></i>
+                  </div>
+                  <span>Night sweats</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Vomiting">
+                  <div class="symptom-icon">
+                    <i class="fas fa-poo-storm"></i>
+                  </div>
+                  <span>Vomiting</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Ear pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-ear-listen"></i>
+                  </div>
+                  <span>Ear pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Weight loss">
+                  <div class="symptom-icon">
+                    <i class="fas fa-weight"></i>
+                  </div>
+                  <span>Weight loss</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Burning while urinating">
+                  <div class="symptom-icon">
+                    <i class="fas fa-fire"></i>
+                  </div>
+                  <span>Burning while urinating</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Mood swings">
+                  <div class="symptom-icon">
+                    <i class="fas fa-smile"></i>
+                  </div>
+                  <span>Mood swings</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Cold extremities">
+                  <div class="symptom-icon">
+                    <i class="fas fa-snowflake"></i>
+                  </div>
+                  <span>Cold extremities</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Chest pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <span>Chest pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Fever">
+                  <div class="symptom-icon">
+                    <i class="fas fa-thermometer"></i>
+                  </div>
+                  <span>Fever</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Joint pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-bone"></i>
+                  </div>
+                  <span>Joint pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Anxiety">
+                  <div class="symptom-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <span>Anxiety</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Body ache">
+                  <div class="symptom-icon">
+                    <i class="fas fa-dumbbell"></i>
+                  </div>
+                  <span>Body ache</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Burning sensation">
+                  <div class="symptom-icon">
+                    <i class="fas fa-fire"></i>
+                  </div>
+                  <span>Burning sensation</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Chills">
+                  <div class="symptom-icon">
+                    <i class="fas fa-snowflake"></i>
+                  </div>
+                  <span>Chills</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Cramping">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-holding-medical"></i>
+                  </div>
+                  <span>Cramping</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Depression">
+                  <div class="symptom-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <span>Depression</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Dry mouth">
+                  <div class="symptom-icon">
+                    <i class="fas fa-tint"></i>
+                  </div>
+                  <span>Dry mouth</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Frequent headaches">
+                  <div class="symptom-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <span>Frequent headaches</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Hair loss">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hair"></i>
+                  </div>
+                  <span>Hair loss</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Heartburn">
+                  <div class="symptom-icon">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <span>Heartburn</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Joint stiffness">
+                  <div class="symptom-icon">
+                    <i class="fas fa-bone"></i>
+                  </div>
+                  <span>Joint stiffness</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Light sensitivity">
+                  <div class="symptom-icon">
+                    <i class="fas fa-lightbulb"></i>
+                  </div>
+                  <span>Light sensitivity</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Loss of balance">
+                  <div class="symptom-icon">
+                    <i class="fas fa-balance-scale"></i>
+                  </div>
+                  <span>Loss of balance</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Loss of smell">
+                  <div class="symptom-icon">
+                    <i class="fas fa-nose"></i>
+                  </div>
+                  <span>Loss of smell</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Rash">
+                  <div class="symptom-icon">
+                    <i class="fas fa-allergies"></i>
+                  </div>
+                  <span>Rash</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Sleep disturbances">
+                  <div class="symptom-icon">
+                    <i class="fas fa-bed"></i>
+                  </div>
+                  <span>Sleep disturbances</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Sneezing">
+                  <div class="symptom-icon">
+                    <i class="fas fa-wind"></i>
+                  </div>
+                  <span>Sneezing</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Sweating">
+                  <div class="symptom-icon">
+                    <i class="fas fa-tint"></i>
+                  </div>
+                  <span>Sweating</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Tinnitus">
+                  <div class="symptom-icon">
+                    <i class="fas fa-ear-listen"></i>
+                  </div>
+                  <span>Tinnitus</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Tremors">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-paper"></i>
+                  </div>
+                  <span>Tremors</span>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" id="additionalSymptoms">
+          </div>
+=======
+            <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Dizziness">
+                  <div class="symptom-icon">
+                    <i class="fas fa-dizzy"></i>
+                  </div>
+                  <span>Dizziness</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Frequent urination">
+                  <div class="symptom-icon">
+                    <i class="fas fa-toilet"></i>
+                  </div>
+                  <span>Frequent urination</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Nausea">
+                  <div class="symptom-icon">
+                    <i class="fas fa-stomach"></i>
+                  </div>
+                  <span>Nausea</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Skin rash">
+                  <div class="symptom-icon">
+                    <i class="fas fa-allergies"></i>
+                  </div>
+                  <span>Skin rash</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Blurred vision">
+                  <div class="symptom-icon">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                  <span>Blurred vision</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Cough">
+                  <div class="symptom-icon">
+                    <i class="fas fa-lungs"></i>
+                  </div>
+                  <span>Cough</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Shortness of breath">
+                  <div class="symptom-icon">
+                    <i class="fas fa-wind"></i>
+                  </div>
+                  <span>Shortness of breath</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Diarrhea">
+                  <div class="symptom-icon">
+                    <i class="fas fa-toilet-paper"></i>
+                  </div>
+                  <span>Diarrhea</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Itching">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-paper"></i>
+                  </div>
+                  <span>Itching</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Swelling">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-holding-medical"></i>
+                  </div>
+                  <span>Swelling</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Headache">
+                  <div class="symptom-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <span>Headache</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Muscle weakness">
+                  <div class="symptom-icon">
+                    <i class="fas fa-dumbbell"></i>
+                  </div>
+                  <span>Muscle weakness</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Abdominal pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-stomach"></i>
+                  </div>
+                  <span>Abdominal pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Sore throat">
+                  <div class="symptom-icon">
+                    <i class="fas fa-throat"></i>
+                  </div>
+                  <span>Sore throat</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Runny nose">
+                  <div class="symptom-icon">
+                    <i class="fas fa-nose"></i>
+                  </div>
+                  <span>Runny nose</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Fatigue">
+                  <div class="symptom-icon">
+                    <i class="fas fa-tired"></i>
+                  </div>
+                  <span>Fatigue</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Tingling sensation">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-paper"></i>
+                  </div>
+                  <span>Tingling sensation</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Bruising">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-holding-medical"></i>
+                  </div>
+                  <span>Bruising</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Back pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-backward"></i>
+                  </div>
+                  <span>Back pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Loss of consciousness">
+                  <div class="symptom-icon">
+                    <i class="fas fa-user-injured"></i>
+                  </div>
+                  <span>Loss of consciousness</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Palpitations">
+                  <div class="symptom-icon">
+                    <i class="fas fa-heartbeat"></i>
+                  </div>
+                  <span>Palpitations</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Constipation">
+                  <div class="symptom-icon">
+                    <i class="fas fa-toilet"></i>
+                  </div>
+                  <span>Constipation</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Night sweats">
+                  <div class="symptom-icon">
+                    <i class="fas fa-moon"></i>
+                  </div>
+                  <span>Night sweats</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Vomiting">
+                  <div class="symptom-icon">
+                    <i class="fas fa-poo-storm"></i>
+                  </div>
+                  <span>Vomiting</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Ear pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-ear-listen"></i>
+                  </div>
+                  <span>Ear pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Weight loss">
+                  <div class="symptom-icon">
+                    <i class="fas fa-weight"></i>
+                  </div>
+                  <span>Weight loss</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Burning while urinating">
+                  <div class="symptom-icon">
+                    <i class="fas fa-fire"></i>
+                  </div>
+                  <span>Burning while urinating</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Mood swings">
+                  <div class="symptom-icon">
+                    <i class="fas fa-smile"></i>
+                  </div>
+                  <span>Mood swings</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Cold extremities">
+                  <div class="symptom-icon">
+                    <i class="fas fa-snowflake"></i>
+                  </div>
+                  <span>Cold extremities</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Chest pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <span>Chest pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Fever">
+                  <div class="symptom-icon">
+                    <i class="fas fa-thermometer"></i>
+                  </div>
+                  <span>Fever</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Joint pain">
+                  <div class="symptom-icon">
+                    <i class="fas fa-bone"></i>
+                  </div>
+                  <span>Joint pain</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Anxiety">
+                  <div class="symptom-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <span>Anxiety</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Body ache">
+                  <div class="symptom-icon">
+                    <i class="fas fa-dumbbell"></i>
+                  </div>
+                  <span>Body ache</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Burning sensation">
+                  <div class="symptom-icon">
+                    <i class="fas fa-fire"></i>
+                  </div>
+                  <span>Burning sensation</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Chills">
+                  <div class="symptom-icon">
+                    <i class="fas fa-snowflake"></i>
+                  </div>
+                  <span>Chills</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Cramping">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hand-holding-medical"></i>
+                  </div>
+                  <span>Cramping</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Depression">
+                  <div class="symptom-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <span>Depression</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Dry mouth">
+                  <div class="symptom-icon">
+                    <i class="fas fa-tint"></i>
+                  </div>
+                  <span>Dry mouth</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Frequent headaches">
+                  <div class="symptom-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <span>Frequent headaches</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Hair loss">
+                  <div class="symptom-icon">
+                    <i class="fas fa-hair"></i>
+                  </div>
+                  <span>Hair loss</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Heartburn">
+            </div>
+            <input type="hidden" id="additionalSymptoms">
+          </div>
+          
+          <div class="d-flex justify-content-between mt-4">
+            <button type="button" class="btn btn-outline-secondary prev-step" data-prev="1">
+              <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <button type="button" class="btn-assessment next-step" data-next="3">
+              Next <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3: Details -->
+        <div class="step-content" id="step3">
+          <h3 class="mb-4">Tell us more about your symptoms</h3>
+          
+          <div class="mb-4">
+            <label class="form-label">Duration of Symptoms</label>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="Less than 1 day">
+                  <div class="symptom-icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <span>Less than 1 day</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="1-2 days">
+                  <div class="symptom-icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <span>1-2 days</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="3-7 days">
+                  <div class="symptom-icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <span>3-7 days</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="1-2 weeks">
+                  <div class="symptom-icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <span>1-2 weeks</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="2-4 weeks">
+                  <div class="symptom-icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <span>2-4 weeks</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="symptom-card" data-value="More than 4 weeks">
+                  <div class="symptom-icon">
+                    <i class="far fa-clock"></i>
+                  </div>
+                  <span>More than 4 weeks</span>
+                </div>
+              </div>
+            </div>
+            <input type="hidden" id="duration" required>
+          </div>
+          <div class="mb-4">
+            <label for="severity" class="form-label">Severity (1-10)</label>
+            <input type="range" class="severity-slider" id="severity" min="1" max="10" value="5">
+            <div class="severity-labels">
+              <span class="severity-label">Mild</span>
+              <span class="severity-label">Moderate</span>
+              <span class="severity-label">Severe</span>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">Pain Location (if applicable)</label>
+            <div class="body-map-container">
+              <img src="images/body-map.png.png" alt="Human body map" class="body-map" id="bodyMap">
+              <div class="body-area" id="headArea" data-area="Head" style="width: 80px; height: 80px; top: 15%; left: 50%;"></div>
+              <div class="body-area" id="chestArea" data-area="Chest" style="width: 120px; height: 120px; top: 30%; left: 50%;"></div>
+              <div class="body-area" id="abdomenArea" data-area="Abdomen" style="width: 140px; height: 140px; top: 50%; left: 50%;"></div>
+              <div class="body-area" id="armLeftArea" data-area="Left Arm" style="width: 30px; height: 100px; top: 35%; left: 25%; transform: rotate(20deg);"></div>
+              <div class="body-area" id="armRightArea" data-area="Right Arm" style="width: 30px; height: 100px; top: 35%; left: 75%; transform: rotate(-20deg);"></div>
+              <div class="body-area" id="legLeftArea" data-area="Left Leg" style="width: 40px; height: 150px; top: 70%; left: 40%;"></div>
+              <div class="body-area" id="legRightArea" data-area="Right Leg" style="width: 40px; height: 150px; top: 70%; left: 60%;"></div>
+            </div>
+            <input type="hidden" id="painLocation">
+          </div>
+          
+          <div class="mb-4">
+            <label for="allergies" class="form-label">Allergies</label>
+            <input type="text" class="form-control" id="allergies" placeholder="e.g., Penicillin, None">
+          </div>
+          
+          <div class="d-flex justify-content-between mt-4">
+            <button type="button" class="btn btn-outline-secondary prev-step" data-prev="2">
+              <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <button type="submit" class="btn-assessment">
+              <i class="fas fa-stethoscope"></i> Get Recommendation
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Step 4: Results -->
+      <div class="step-content" id="step4">
+        <div class="result-container" id="resultContainer">
+          <div class="result-header">
+            <div class="result-icon">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <div>
+              <h3 class="mb-1">Triage Result</h3>
+              <p class="text-muted" id="resultTimestamp"></p>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <h4 id="triageResult" class="mb-3"></h4>
+            <div class="alert" id="resultAlert">
+              <p id="recommendedAction" class="mb-2"></p>
+              <p id="resultReasoning" class="mb-0"></p>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <h5 class="mb-3">Next Steps</h5>
+            <div id="nextSteps"></div>
+          </div>
+          
+          <div class="d-flex justify-content-between mt-4">
+            <button type="button" class="btn btn-outline-secondary prev-step" data-prev="3">
+              <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <button type="button" class="btn-assessment" id="printResults">
+              <i class="fas fa-print"></i> Print Results
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chatbot Assistant -->
+  <div class="chatbot-container">
+    <div class="chatbot-btn" id="chatbotBtn">
+      <i class="fas fa-robot"></i>
+    </div>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <h5 class="mb-0">MediSort Assistant</h5>
+        <button class="btn btn-sm btn-light" id="closeChatbot">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chatbot-message bot-message">
+          Hi there! I'm here to help you with your symptom assessment. How can I assist you?
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" id="chatbotInput" placeholder="Type your question...">
+        <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Triage Indicator -->
+  <div class="triage-indicator" id="triageIndicator">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <span>Triage Level:</span>
+      <span id="triageLevelText">Low</span>
+    </div>
+    <div class="triage-level">
+      <div class="triage-progress" id="triageProgress"></div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      // Initialize variables
+      let currentStep = 1;
+      const totalSteps = 4;
+      let selectedSymptoms = [];
+      
+      // Update triage level as user fills form
+      function updateTriageLevel() {
+        let level = 0;
+        
+        // Age factor
+        const age = parseInt($('#age').val()) || 0;
+        if (age > 60 || age < 5) level += 10;
+        
+        // Primary symptom factor
+        const primarySymptom = $('#primarySymptom').val().toLowerCase();
+        if (['chest pain', 'shortness of breath', 'severe bleeding', 'seizures'].includes(primarySymptom)) {
+          level += 30;
+        } else if (primarySymptom) {
+          level += 10;
+        }
+        
+        // Additional symptoms factor
+        level += selectedSymptoms.length * 5;
+        
+        // Severity factor
+        const severity = parseInt($('#severity').val()) || 5;
+        level += (severity - 1) * 3;
+        
+        // Cap at 100
+        level = Math.min(100, Math.max(0, level));
+        
+        // Update indicator
+        $('#triageProgress').css('width', level + '%');
+        $('#triageLevelText').text(
+          level < 30 ? 'Low' : 
+          level < 60 ? 'Moderate' : 'High'
+        );
+        
+        // Show/hide indicator
+        if (level > 0) {
+          $('#triageIndicator').fadeIn();
+        } else {
+          $('#triageIndicator').fadeOut();
+        }
+      }
+      
+      // Step navigation
+      $('.next-step').click(function() {
+        const nextStep = $(this).data('next');
+        goToStep(nextStep);
+      });
+      
+      $('.prev-step').click(function() {
+        const prevStep = $(this).data('prev');
+        goToStep(prevStep);
+      });
+      
+      function goToStep(step) {
+        // Validate current step before proceeding
+        if (currentStep === 1 && !validateStep1()) return;
+        if (currentStep === 2 && !validateStep2()) return;
+        
+        // Update UI
+        $('.step-content').removeClass('active');
+        $('.nav-step').removeClass('active');
+        
+        $(`#step${step}`).addClass('active');
+        $(`.nav-step[data-step="${step}"]`).addClass('active');
+        
+        // Mark previous steps as completed
+        for (let i = 1; i < step; i++) {
+          $(`.nav-step[data-step="${i}"]`).addClass('completed');
+        }
+        
+        currentStep = step;
+        
+        // Scroll to top of step
+        $('html, body').animate({
+          scrollTop: $('.assessment-container').offset().top - 20
+        }, 300);
+      }
+      
+      function validateStep1() {
+        const age = $('#age').val();
+        if (!age) {
+          alert('Please enter your age');
+          return false;
+        }
+        return true;
+      }
+      
+      function validateStep2() {
+        const primarySymptom = $('#primarySymptom').val();
+        if (!primarySymptom) {
+          alert('Please enter your primary symptom');
+          return false;
+        }
+        return true;
+      }
+      
+      // Symptom card selection
+      $('.symptom-card').click(function() {
+        $(this).toggleClass('active');
+        
+        // Update selected symptoms array
+        const symptomValue = $(this).data('value');
+        const index = selectedSymptoms.indexOf(symptomValue);
+        
+        if (index === -1) {
+          selectedSymptoms.push(symptomValue);
+        } else {
+          selectedSymptoms.splice(index, 1);
+        }
+        
+        // Update hidden input
+        $('#additionalSymptoms').val(selectedSymptoms.join(', '));
+        
+        // Update triage level
+        updateTriageLevel();
+      });
+      
+      // Body map interaction
+      $('#bodyMap').click(function(e) {
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        // Find which area was clicked (simplified for demo)
+        let clickedArea = null;
+        
+        // Head area (simplified detection)
+        if (y < rect.height * 0.25) {
+          clickedArea = 'headArea';
+        } 
+        // Chest area
+        else if (y < rect.height * 0.4) {
+          clickedArea = 'chestArea';
+        }
+        // Abdomen area
+        else if (y < rect.height * 0.6) {
+          clickedArea = 'abdomenArea';
+        }
+        // Left arm
+        else if (x < rect.width * 0.4 && y < rect.height * 0.6) {
+          clickedArea = 'armLeftArea';
+        }
+        // Right arm
+        else if (x > rect.width * 0.6 && y < rect.height * 0.6) {
+          clickedArea = 'armRightArea';
+        }
+        // Left leg
+        else if (x < rect.width * 0.5) {
+          clickedArea = 'legLeftArea';
+        }
+        // Right leg
+        else {
+          clickedArea = 'legRightArea';
+        }
+        
+        // Highlight selected area
+        $('.body-area').removeClass('active');
+        if (clickedArea) {
+          $(`#${clickedArea}`).addClass('active');
+          $('#painLocation').val($(`#${clickedArea}`).data('area'));
+        } else {
+          $('#painLocation').val('');
+        }
+      });
+      
+      // Form submission
+      $('#triageForm').submit(function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        $('button[type="submit"]').html('<i class="fas fa-spinner fa-spin"></i> Analyzing...').prop('disabled', true);
+        
+        // Simulate API call with timeout
+        setTimeout(() => {
+          // Process form data
+          const formData = {
+            age: $('#age').val(),
+            gender: $('#gender').val(),
+            primarySymptom: $('#primarySymptom').val(),
+            additionalSymptoms: selectedSymptoms,
+            duration: $('#duration').val(),
+            severity: $('#severity').val(),
+            painLocation: $('#painLocation').val(),
+            allergies: $('#allergies').val()
+          };
+          
+          // Generate triage result (simplified for demo)
+          let result;
+          const primarySymptom = formData.primarySymptom.toLowerCase();
+          const severity = parseInt(formData.severity);
+          if (primarySymptom === 'chest pain' && severity >= 7) {
+            result = {
+              triage_category: "Emergency Care Needed",
+              recommended_action: "Seek emergency care immediately.",
+              reasoning: "Your symptoms suggest a potentially life-threatening condition."
+            };
+          } else {
+            result = {
+              triage_category: "Routine Check",
+              recommended_action: "Schedule a visit with your healthcare provider.",
+              reasoning: "Your symptoms are manageable but should be evaluated."
+            };
+          }
+          
+          // Display results
+          $('#triageResult').text(result.triage_category);
+          $('#recommendedAction').text(result.recommended_action);
+          $('#resultReasoning').text(result.reasoning);
+          $('#resultContainer').fadeIn();
+          
+          // Reset button state
+          $('button[type="submit"]').html('<i class="fas fa-stethoscope"></i> Get Recommendation').prop('disabled', false);
+        }, 2000);
+      });
+
+      // Chatbot functionality
+      $('#chatbotBtn').click(function() {
+        $('#chatbotWindow').toggle();
+      });
+
+      $('#closeChatbot').click(function() {
+        $('#chatbotWindow').hide();
+      });
+
+      $('#sendMessage').click(function() {
+        const userMessage = $('#chatbotInput').val();
+        if (userMessage) {
+          $('#chatbotMessages').append(`
+            <div class="chatbot-message user-message">${userMessage}</div>
+          `);
+          $('#chatbotInput').val('');
+          
+          // Simulate bot response
+          setTimeout(() => {
+            $('#chatbotMessages').append(`
+              <div class="chatbot-message bot-message">I'm here to help! Please provide your symptoms.</div>
+            `);
+            $('#chatbotMessages').scrollTop($('#chatbotMessages')[0].scrollHeight);
+          }, 1000);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
